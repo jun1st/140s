@@ -1,0 +1,16 @@
+/* 
+  Localizeable.strings
+  140Pulse
+
+  Created by qijun on 28/7/13.
+  Copyright (c) 2013 fengqijun. All rights reserved.
+*/
+"No Message" = "内容为空";
+"Don't you want to say something?" = "不想说点什么吗？";
+"OK" = "好";
+"Sending..." = "正在发送...";
+"Message Posted" = "发布成功";
+"Sorry, Please try again later" = "抱歉，请稍后再试";
+"PostPicture" = "图片";
+"Exceed 140 characters limit" = "超出了140个字符的限制";
+

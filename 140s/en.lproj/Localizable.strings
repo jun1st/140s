@@ -1,0 +1,15 @@
+/* 
+  Localizeable.strings
+  140Pulse
+
+  Created by qijun on 28/7/13.
+  Copyright (c) 2013 fengqijun. All rights reserved.
+*/
+"No Message" = "No Message";
+"Don't you want to say something?" = "Don't you want to say something?";
+"OK" = "OK";
+"Sending..." = "Sending...";
+"Message Posted" = "Message Posted";
+"Sorry, Please try again later" = "Sorry, Please try again later";
+"PostPicture" = "Pic";
+"Exceed 140 characters limit" = "Exceed 140 characters limit";
