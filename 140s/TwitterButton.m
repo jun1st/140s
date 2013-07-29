@@ -7,14 +7,14 @@
 //
 
 #import "TwitterButton.h"
-#import "UIRoundedImageView.h"
 #import <QuartzCore/QuartzCore.h>
 #import <Social/Social.h>
 #import <Accounts/Accounts.h>
 
-@interface TwitterButton()
+#define TWITTER_TEXT_URL @"https://api.twitter.com/1.1/statuses/update.json";
+#define TWITTER_IMAGE_URL @"https://api.twitter.com/1.1/statuses/update_with_media.json";
 
-@property (strong, nonatomic) UIRoundedImageView * buttonImage;
+@interface TwitterButton()
 
 @end
 @implementation TwitterButton
@@ -24,6 +24,7 @@
     self = [super init];
     if (self)
     {
+        self.imageSizeLimit = 3145728.0f;
         self.buttonImage = [[UIRoundedImageView alloc] init];
         self.buttonImage.image = [UIImage imageNamed:@"twitter.png"];
         [self addSubview:self.buttonImage];
@@ -66,7 +67,6 @@
 }
 
 #pragma SocialButton protocol
-
 -(void)sendMessage:(NSString *)message Image:(UIImage *)image completion:(void (^)(BOOL, NSString *))completionHandler
 {
     ACAccountStore *accountStore = [[ACAccountStore alloc] init];
@@ -74,27 +74,15 @@
 	// Create an account type that ensures Twitter accounts are retrieved.
     ACAccountType *accountType = [accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
     
-    void (^requestHandler)(NSData *, NSHTTPURLResponse *, NSError *) = ^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error){
-        int status = [urlResponse statusCode];
-        
-        if (status >= 200 && status < 300) {
-            completionHandler(YES, nil);
-        }
-        else
-        {
-            NSLog(@"%@", [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
-            completionHandler(NO, @"Failed");
-        }
-        
-    };
+    RequestHandler requestHandler = [self requestHandlerWithCompletion:completionHandler];
     
-    NSString * twitterUrl = @"https://api.twitter.com/1.1/statuses/update.json";
+    NSString * twitterUrl = TWITTER_TEXT_URL;
     if (image)
     {
-        twitterUrl = @"https://api.twitter.com/1.1/statuses/update_with_media.json";
+        twitterUrl = TWITTER_IMAGE_URL;
     }
     
-    void (^requestAccessHandler)(BOOL, NSError *) = ^(BOOL granted, NSError * error)
+    AccountRequestHandler requestAccessHandler = ^(BOOL granted, NSError * error)
     {
         if (granted)
         {
@@ -117,11 +105,8 @@
                 
                 if (image)
                 {
-                    NSData *imageData = UIImageJPEGRepresentation(image, 1.f);
-
-                    
-                    //3145728
-                    //[imageData length];
+                    NSData *imageData;
+                    imageData = [self prepareImageData:image];
                     
                     [request addMultipartData:imageData withName:@"media[]" type:@"image/jpeg" filename:@"image.jpg"];
                 }

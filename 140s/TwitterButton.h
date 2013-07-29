@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SocialButtonProtocol.h"
+#import "SocialButton.h"
+#import "SocialButton_Protected.h"
 
-@interface TwitterButton : UIButton<SocialButtonProtocol>
-
+@interface TwitterButton : SocialButton
 @end

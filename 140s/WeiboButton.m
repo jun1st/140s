@@ -8,8 +8,12 @@
 
 #import "WeiboButton.h"
 
+#define WEIBO_TEXT_URL @"https://upload.api.weibo.com/2/statuses/update.json";
+#define WEIBO_IMAGE_URL @"https://upload.api.weibo.com/2/statuses/upload.json";
+
 @interface WeiboButton()
 @property (strong, nonatomic) UIRoundedImageView * buttonImage;
+
 @end
 
 @implementation WeiboButton
@@ -19,6 +23,7 @@
     self = [super init];
     if (self)
     {
+        self.imageSizeLimit = 5 * 1024 * 1024; //5m
         self.buttonImage = [[UIRoundedImageView alloc] init];
         self.buttonImage.image = [UIImage imageNamed:@"weibo.png"];
         [self addSubview:self.buttonImage];
@@ -67,28 +72,15 @@
 	// Create an account type that ensures Twitter accounts are retrieved.
     ACAccountType *accountType = [accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierSinaWeibo];
 	
-    void (^requestHandler)(NSData *, NSHTTPURLResponse *, NSError *) = ^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error){
-        int status = [urlResponse statusCode];
-        
-        if (status >= 200 && status < 300) {
-            completionHandler(YES, nil);
-        }
-        else
-        {
-            NSLog(@"%@", [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
-            //No Account Settup
-            completionHandler(NO, @"Failed");
-        }
-        
-    };
+    RequestHandler requestHandler = [self requestHandlerWithCompletion:completionHandler];
     
-    NSString * weiboUrl = @"https://upload.api.weibo.com/2/statuses/update.json";
+    NSString * weiboUrl = WEIBO_TEXT_URL
     if (image)
     {
-        weiboUrl = @"https://upload.api.weibo.com/2/statuses/upload.json";
+        weiboUrl = WEIBO_IMAGE_URL
     }
     
-    void (^accountRequestHander)(BOOL, NSError *) = ^(BOOL granted, NSError *error)
+    AccountRequestHandler accountRequestHander = ^(BOOL granted, NSError *error)
     {
         if(granted) {
             // Get the list of Twitter accounts.
@@ -107,7 +99,9 @@
                                                            parameters:parameters];
                 if (image)
                 {
-                    NSData *imageData = UIImageJPEGRepresentation(image, 1.f);
+                    NSData *imageData;
+                    imageData = [self prepareImageData:image];
+
                     [request addMultipartData:imageData withName:@"pic" type:@"image/jpeg" filename:@"image.jpg"];
                 }
 

@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SocialButtonProtocol.h"
-#import "UIRoundedImageView.h"
+#import "SocialButton.h"
+#import "SocialButton_Protected.h"
 #import <Social/Social.h>
 #import <Accounts/Accounts.h>
 
-@interface WeiboButton : UIButton<SocialButtonProtocol>
+@interface WeiboButton : SocialButton
 
 @end

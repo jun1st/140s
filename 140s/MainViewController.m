@@ -10,7 +10,7 @@
 #import <Accounts/Accounts.h>
 #import <Social/Social.h>
 #import "PrettyAlertView.h"
-#import "SocialButtonProtocol.h"
+#import "SocialButton.h"
 
 
 @interface MainViewController ()
