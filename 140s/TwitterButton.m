@@ -82,7 +82,7 @@
         }
         else
         {
-            NSLog(@"%@", responseData);
+            NSLog(@"%@", [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
             completionHandler(NO, @"Failed");
         }
         

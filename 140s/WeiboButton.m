@@ -75,7 +75,7 @@
         }
         else
         {
-            NSLog(@"%@", error);
+            NSLog(@"%@", [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
             //No Account Settup
             completionHandler(NO, @"Failed");
         }
