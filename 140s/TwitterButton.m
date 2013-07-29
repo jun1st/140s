@@ -118,6 +118,11 @@
                 if (image)
                 {
                     NSData *imageData = UIImageJPEGRepresentation(image, 1.f);
+
+                    
+                    //3145728
+                    //[imageData length];
+                    
                     [request addMultipartData:imageData withName:@"media[]" type:@"image/jpeg" filename:@"image.jpg"];
                 }
                 

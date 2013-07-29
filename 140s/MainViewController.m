@@ -275,6 +275,11 @@
     [self presentViewController:self.imagePickerController animated:YES completion:nil];
 }
 
+-(void)clearTextView
+{
+    self.textEdit.text = @"";
+}
+
 #pragma UIImagePickerController Delegate
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info

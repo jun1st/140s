@@ -25,11 +25,19 @@
 
 - (void)awakeFromNib
 {
-    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pickedImageTapped:)];
+    UITapGestureRecognizer *singleTapForImageView = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pickedImageTapped:)];
+    singleTapForImageView.numberOfTapsRequired = 1;
+    singleTapForImageView.numberOfTouchesRequired = 1;
+    [self.pickedImageView addGestureRecognizer:singleTapForImageView];
+    [self.pickedImageView setUserInteractionEnabled:YES];
+    
+    UITapGestureRecognizer *singleTap= [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pickedImageTapped:)];
     singleTap.numberOfTapsRequired = 1;
     singleTap.numberOfTouchesRequired = 1;
-    [self.pickedImageView addGestureRecognizer:singleTap];
-    [self.pickedImageView setUserInteractionEnabled:YES];
+    [self.count addGestureRecognizer:singleTap];
+    [self.count setUserInteractionEnabled:YES];
+    
+    
 }
 
 // Only override drawRect: if you perform custom drawing.
@@ -41,7 +49,19 @@
 
 - (void)pickedImageTapped:(UIGestureRecognizer *)gestureRecognizer
 {
-    [self removeImage];
+    if (gestureRecognizer.view == self.pickedImageView)
+    {
+        [self removeImage];
+    }
+    else
+    {
+        if (self.delegate)
+        {
+            [self.delegate clearTextView];
+            self.count.text = @"140";
+        }
+    }
+    
 }
 
 - (IBAction)pickerImage:(id)sender {

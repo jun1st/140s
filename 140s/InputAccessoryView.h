@@ -13,6 +13,7 @@
 
 @required
 -(void)pickImage;
+-(void)clearTextView;
 
 @end
 

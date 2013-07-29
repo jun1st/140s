@@ -21,6 +21,7 @@
 @property (strong, nonatomic) TwitterButton *twitterButton;
 @property (strong, nonatomic) WeiboButton *weiboButton;
 @property (weak, nonatomic) IBOutlet UIView * cameraOverlay;
+@property (weak, nonatomic) IBOutlet UILabel *count;
 
 - (IBAction)changeImagePickerSourceToPhotosLibrary:(id)sender;
 - (IBAction)takePhoto:(id)sender;
