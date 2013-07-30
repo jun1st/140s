@@ -9,10 +9,18 @@
 #import "SocialButton.h"
 #import "SocialButton_Protected.h"
 
+@interface SocialButton()
+
+@property (nonatomic, strong) Reachability * internetReachability;
+
+@end
+
 @implementation SocialButton
 
 @synthesize imageSizeLimit = _imageSizeLimit;
 @synthesize requestHandler = _requestHandler;
+@synthesize hostname = _hostname;
+@synthesize hostReachability = _hostReachability;
 
 -(id)init
 {
@@ -20,19 +28,28 @@
     if (self)
     {
         [[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(reachabilityChanged:) name: kReachabilityChangedNotification object: nil];
+        self.internetReachability = [Reachability reachabilityForInternetConnection];
+        [self.internetReachability startNotifier];
     }
     
     return self;
 }
 
-- (void) reachabilityChanged: (NSNotification* )note
+- (void)reachabilityChanged: (NSNotification* )note
 {
     Reachability* curReach = [note object];
 	NSParameterAssert([curReach isKindOfClass: [Reachability class]]);
     
-    self.networkStatus = [curReach currentReachabilityStatus];
+    if (curReach == self.internetReachability)
+    {
+        self.networkStatus = [curReach currentReachabilityStatus];
+    }
+    if (curReach == self.hostReachability)
+    {
+        self.isHostReachable = [curReach currentReachabilityStatus] != NotReachable;
+    }
+    
 }
-
 
 
 - (NSData *)prepareImageData:(UIImage *)image
@@ -67,11 +84,11 @@
         int status = [urlResponse statusCode];
         
         if (status >= 200 && status < 300) {
-            completion(YES, nil);
+            completion(YES, NSLocalizedString(@"Message Posted", @"success"));
         }
         else
         {
-            completion(NO, @"Failed");
+            completion(NO, NSLocalizedString(@"Sorry, Please try again later", @"failed"));
         }
         
     };

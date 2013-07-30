@@ -154,11 +154,11 @@
                          dispatch_async(dispatch_get_main_queue(), ^{
                              if (successful)
                              {
-                                 [SVProgressHUD showSuccessWithStatus:NSLocalizedString(@"Message Posted", @"success")];
+                                 [SVProgressHUD showSuccessWithStatus:result];
                              }
                              else
                              {
-                                 [SVProgressHUD showErrorWithStatus:NSLocalizedString(@"Sorry, Please try again later", @"failed")];
+                                 [SVProgressHUD showErrorWithStatus:result];
                              }
 
                          });

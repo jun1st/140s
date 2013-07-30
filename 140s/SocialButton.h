@@ -28,10 +28,13 @@ typedef void (^AccountRequestHandler)(BOOL, NSError *);
     @protected
     float _imageSizeLimit;
     RequestHandler _requestHandler;
+    NSString *_hostname;
+    Reachability * _hostReachability;
 }
 
 @property (strong, nonatomic) UIRoundedImageView * buttonImage;
 @property (nonatomic) NetworkStatus networkStatus;
+@property (nonatomic) NetworkStatus isHostReachable;
 
 - (void) reachabilityChanged: (NSNotification* )note;
 - (NSData *)prepareImageData:(UIImage *)image;

@@ -12,6 +12,6 @@
 
 @property (nonatomic) float imageSizeLimit;
 @property (nonatomic, strong) RequestHandler requestHandler;
-
-
+@property (nonatomic, strong) NSString * hostname;
+@property (nonatomic, strong) Reachability * hostReachability;
 @end

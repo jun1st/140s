@@ -28,6 +28,12 @@
         self.buttonImage = [[UIRoundedImageView alloc] init];
         self.buttonImage.image = [UIImage imageNamed:@"twitter.png"];
         [self addSubview:self.buttonImage];
+        
+        self.hostname = @"www.twitter.com";
+        
+        self.hostReachability = [Reachability reachabilityWithHostName:self.hostname];
+        [self.hostReachability startNotifier];
+        
     }
     
     return self;
@@ -69,6 +75,13 @@
 #pragma SocialButton protocol
 -(void)sendMessage:(NSString *)message Image:(UIImage *)image completion:(void (^)(BOOL, NSString *))completionHandler
 {
+    
+    if (!self.isHostReachable)
+    {
+        completionHandler(NO, @"Not able to access twitter");
+        return;
+    }
+    
     ACAccountStore *accountStore = [[ACAccountStore alloc] init];
 	
 	// Create an account type that ensures Twitter accounts are retrieved.

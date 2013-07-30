@@ -26,7 +26,11 @@
         self.imageSizeLimit = 5 * 1024 * 1024; //5m
         self.buttonImage = [[UIRoundedImageView alloc] init];
         self.buttonImage.image = [UIImage imageNamed:@"weibo.png"];
+
         [self addSubview:self.buttonImage];
+        
+        self.hostReachability = [Reachability reachabilityWithHostName:self.hostname];
+        [self.hostReachability startNotifier];
     }
     
     return self;
@@ -66,6 +70,13 @@
 
 -(void)sendMessage:(NSString *)message Image:(UIImage *)image completion:(void (^)(BOOL, NSString *))completionHandler
 {
+    
+    if (!self.isHostReachable)
+    {
+        completionHandler(NO, @"Not able to access Weibo");
+        return;
+    }
+    
     // Create an account store object.
 	ACAccountStore *accountStore = [[ACAccountStore alloc] init];
 	
