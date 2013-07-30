@@ -28,7 +28,7 @@
         self.buttonImage.image = [UIImage imageNamed:@"weibo.png"];
 
         [self addSubview:self.buttonImage];
-        
+        self.hostname = @"www.weibo.com";
         self.hostReachability = [Reachability reachabilityWithHostName:self.hostname];
         [self.hostReachability startNotifier];
     }
