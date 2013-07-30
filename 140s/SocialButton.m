@@ -39,7 +39,7 @@
 {
     NSData *imageData = UIImageJPEGRepresentation(image, 1.f);
     
-    CGFloat compressionRate = self.imageSizeLimit / [imageData length];
+    CGFloat compressionRate = floorf(self.imageSizeLimit / [imageData length]);
     if (compressionRate > 1)
     {
         compressionRate = 1;

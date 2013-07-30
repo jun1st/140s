@@ -35,14 +35,14 @@
 		4C68335917A63BC300B85383 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C68335B17A63BC300B85383 /* Default@2x.png */; };
 		4C68335D17A63BC900B85383 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C68335F17A63BC900B85383 /* Default-568h@2x.png */; };
 		4CCB094917A6C614000E022D /* SocialButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCB094817A6C614000E022D /* SocialButton.m */; };
-		4CEB91D917A4D0730018CFD0 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CEB91D817A4D0730018CFD0 /* Icon.png */; };
-		4CEB91DB17A4D0790018CFD0 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CEB91DA17A4D0790018CFD0 /* Icon@2x.png */; };
 		4CF9A6FD17A56A26008DA683 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9A6FC17A56A26008DA683 /* MainViewController.m */; };
 		4CF9A6FF17A56A88008DA683 /* InputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF9A6FE17A56A88008DA683 /* InputAccessoryView.xib */; };
 		4CF9A70517A5744E008DA683 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CF9A70717A5744E008DA683 /* Localizable.strings */; };
 		4CF9A70917A5749E008DA683 /* CameraOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF9A70B17A5749E008DA683 /* CameraOverlayView.xib */; };
 		4CFCCC6F17A770A700739398 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCCC6E17A770A700739398 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4CFCCC7117A7717100739398 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCCC7017A7717100739398 /* SystemConfiguration.framework */; };
+		4CFCCC7317A77DC200739398 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFCCC7217A77DC200739398 /* Icon.png */; };
+		4CFCCC7517A77DC600739398 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFCCC7417A77DC600739398 /* Icon@2x.png */; };
 		AA97F98EF32049D6BA874598 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB14479F2FC84D219454076D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -91,8 +91,6 @@
 		4CCB094717A6C614000E022D /* SocialButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialButton.h; sourceTree = "<group>"; };
 		4CCB094817A6C614000E022D /* SocialButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialButton.m; sourceTree = "<group>"; };
 		4CCB094A17A6C8AA000E022D /* SocialButton_Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialButton_Protected.h; sourceTree = "<group>"; };
-		4CEB91D817A4D0730018CFD0 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		4CEB91DA17A4D0790018CFD0 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		4CF9A6FC17A56A26008DA683 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		4CF9A6FE17A56A88008DA683 /* InputAccessoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputAccessoryView.xib; sourceTree = "<group>"; };
 		4CF9A70417A57443008DA683 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -103,6 +101,8 @@
 		4CFCCC6D17A770A700739398 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		4CFCCC6E17A770A700739398 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		4CFCCC7017A7717100739398 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4CFCCC7217A77DC200739398 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		4CFCCC7417A77DC600739398 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		DB14479F2FC84D219454076D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -129,12 +129,12 @@
 		4C12E5BF17A422DC0043CB7F = {
 			isa = PBXGroup;
 			children = (
+				4CFCCC7417A77DC600739398 /* Icon@2x.png */,
+				4CFCCC7217A77DC200739398 /* Icon.png */,
 				4CFCCC7017A7717100739398 /* SystemConfiguration.framework */,
 				4C68335F17A63BC900B85383 /* Default-568h@2x.png */,
 				4C68335B17A63BC300B85383 /* Default@2x.png */,
 				4C68335717A63BB800B85383 /* Default.png */,
-				4CEB91DA17A4D0790018CFD0 /* Icon@2x.png */,
-				4CEB91D817A4D0730018CFD0 /* Icon.png */,
 				4C12E61D17A424050043CB7F /* QuartzCore.framework */,
 				4C12E61B17A423FF0043CB7F /* Social.framework */,
 				4C12E61917A423FB0043CB7F /* Accounts.framework */,
@@ -286,14 +286,14 @@
 				4C12E61117A423340043CB7F /* twitter@2x.png in Resources */,
 				4C12E61317A423340043CB7F /* Signika-Regular.otf in Resources */,
 				4C12E61617A4236C0043CB7F /* Storyboard.storyboard in Resources */,
-				4CEB91D917A4D0730018CFD0 /* Icon.png in Resources */,
-				4CEB91DB17A4D0790018CFD0 /* Icon@2x.png in Resources */,
 				4CF9A6FF17A56A88008DA683 /* InputAccessoryView.xib in Resources */,
 				4CF9A70917A5749E008DA683 /* CameraOverlayView.xib in Resources */,
 				4CF9A70517A5744E008DA683 /* Localizable.strings in Resources */,
 				4C68335517A63BB800B85383 /* Default.png in Resources */,
 				4C68335917A63BC300B85383 /* Default@2x.png in Resources */,
 				4C68335D17A63BC900B85383 /* Default-568h@2x.png in Resources */,
+				4CFCCC7317A77DC200739398 /* Icon.png in Resources */,
+				4CFCCC7517A77DC600739398 /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

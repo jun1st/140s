@@ -119,7 +119,7 @@ CGFloat SVProgressHUDRingThickness = 6;
 }
 
 + (void)showImage:(UIImage *)image status:(NSString *)string {
-    [[SVProgressHUD sharedView] showImage:image status:string duration:1.0];
+    [[SVProgressHUD sharedView] showImage:image status:string duration:1.5];
 }
 
 
@@ -165,7 +165,9 @@ CGFloat SVProgressHUDRingThickness = 6;
             CGGradientRef gradient = CGGradientCreateWithColorComponents(colorSpace, colors, locations, locationsCount);
             CGColorSpaceRelease(colorSpace);
             
-            CGPoint center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
+            CGFloat height = self.bounds.size.height - self.visibleKeyboardHeight;
+            
+            CGPoint center = CGPointMake(self.bounds.size.width/2, height/2);
             float radius = MIN(self.bounds.size.width , self.bounds.size.height) ;
             CGContextDrawRadialGradient (context, gradient, center, 0, center, radius, kCGGradientDrawsAfterEndLocation);
             CGGradientRelease(gradient);
