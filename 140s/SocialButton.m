@@ -14,15 +14,50 @@
 @synthesize imageSizeLimit = _imageSizeLimit;
 @synthesize requestHandler = _requestHandler;
 
+-(id)init
+{
+    self = [super init];
+    if (self)
+    {
+        [[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(reachabilityChanged:) name: kReachabilityChangedNotification object: nil];
+    }
+    
+    return self;
+}
+
+- (void) reachabilityChanged: (NSNotification* )note
+{
+    Reachability* curReach = [note object];
+	NSParameterAssert([curReach isKindOfClass: [Reachability class]]);
+    
+    self.networkStatus = [curReach currentReachabilityStatus];
+}
+
+
+
 - (NSData *)prepareImageData:(UIImage *)image
 {
     NSData *imageData = UIImageJPEGRepresentation(image, 1.f);
     
-    if ([imageData length] > self.imageSizeLimit)
+    CGFloat compressionRate = self.imageSizeLimit / [imageData length];
+    if (compressionRate > 1)
     {
-        CGFloat compressionRate = self.imageSizeLimit / [imageData length];
-        imageData = UIImageJPEGRepresentation(image, compressionRate);
+        compressionRate = 1;
     }
+    
+    if (self.networkStatus != ReachableViaWiFi)
+    {
+        NSLog(@"connect not through wifi");
+        if (compressionRate > 0.5)
+        {
+            compressionRate = 0.5;
+        }
+        
+        NSLog(@"%f", compressionRate);
+    }
+    
+    imageData = UIImageJPEGRepresentation(image, compressionRate);
+    
     return imageData;
 }
 
@@ -36,7 +71,6 @@
         }
         else
         {
-            NSLog(@"%@", [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
             completion(NO, @"Failed");
         }
         

@@ -41,6 +41,8 @@
 		4CF9A6FF17A56A88008DA683 /* InputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF9A6FE17A56A88008DA683 /* InputAccessoryView.xib */; };
 		4CF9A70517A5744E008DA683 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CF9A70717A5744E008DA683 /* Localizable.strings */; };
 		4CF9A70917A5749E008DA683 /* CameraOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF9A70B17A5749E008DA683 /* CameraOverlayView.xib */; };
+		4CFCCC6F17A770A700739398 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCCC6E17A770A700739398 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CFCCC7117A7717100739398 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCCC7017A7717100739398 /* SystemConfiguration.framework */; };
 		AA97F98EF32049D6BA874598 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB14479F2FC84D219454076D /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +100,9 @@
 		4CF9A70817A5745A008DA683 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4CF9A70A17A5749E008DA683 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "zh-Hans"; path = "zh-Hans.lproj/CameraOverlayView.xib"; sourceTree = "<group>"; };
 		4CF9A70C17A574A7008DA683 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CameraOverlayView.xib; sourceTree = "<group>"; };
+		4CFCCC6D17A770A700739398 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		4CFCCC6E17A770A700739398 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		4CFCCC7017A7717100739398 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		DB14479F2FC84D219454076D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -106,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CFCCC7117A7717100739398 /* SystemConfiguration.framework in Frameworks */,
 				4C12E61E17A424050043CB7F /* QuartzCore.framework in Frameworks */,
 				4C12E61C17A423FF0043CB7F /* Social.framework in Frameworks */,
 				4C12E61A17A423FB0043CB7F /* Accounts.framework in Frameworks */,
@@ -123,6 +129,7 @@
 		4C12E5BF17A422DC0043CB7F = {
 			isa = PBXGroup;
 			children = (
+				4CFCCC7017A7717100739398 /* SystemConfiguration.framework */,
 				4C68335F17A63BC900B85383 /* Default-568h@2x.png */,
 				4C68335B17A63BC300B85383 /* Default@2x.png */,
 				4C68335717A63BB800B85383 /* Default.png */,
@@ -161,6 +168,8 @@
 		4C12E5D317A422DC0043CB7F /* 140s */ = {
 			isa = PBXGroup;
 			children = (
+				4CFCCC6D17A770A700739398 /* Reachability.h */,
+				4CFCCC6E17A770A700739398 /* Reachability.m */,
 				4C12E61417A4236C0043CB7F /* Storyboard.storyboard */,
 				4C12E5F517A423340043CB7F /* TwitterButton.h */,
 				4C12E5F717A423340043CB7F /* TwitterButton.m */,
@@ -338,6 +347,7 @@
 				4C12E61217A423340043CB7F /* PrettyAlertView.m in Sources */,
 				4CF9A6FD17A56A26008DA683 /* MainViewController.m in Sources */,
 				4CCB094917A6C614000E022D /* SocialButton.m in Sources */,
+				4CFCCC6F17A770A700739398 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,11 +6,14 @@
 //  Copyright (c) 2013 fengqijun. All rights reserved.
 //
 
+#define kReachabilityChangedNotification @"kNetworkReachabilityChangedNotification"
+
 typedef void (^RequestHandler)(NSData *, NSHTTPURLResponse *, NSError *);
 typedef void (^AccountRequestHandler)(BOOL, NSError *);
 
 #import <Foundation/Foundation.h>
 #import "UIRoundedImageView.h"
+#import "Reachability.h"
 
 @protocol SocialButtonProtocol <NSObject>
 
@@ -28,8 +31,11 @@ typedef void (^AccountRequestHandler)(BOOL, NSError *);
 }
 
 @property (strong, nonatomic) UIRoundedImageView * buttonImage;
+@property (nonatomic) NetworkStatus networkStatus;
 
+- (void) reachabilityChanged: (NSNotification* )note;
 - (NSData *)prepareImageData:(UIImage *)image;
--(RequestHandler)requestHandlerWithCompletion:(void(^)(BOOL, NSString *))completion;
+- (RequestHandler)requestHandlerWithCompletion:(void(^)(BOOL, NSString *))completion;
+
 
 @end
