@@ -11,4 +11,7 @@
 #import "SocialButton_Protected.h"
 
 @interface TwitterButton : SocialButton
+
+-(void)requestAccessWithCompletion:(void (^)(BOOL success, NSString * result))completionHandler;
+
 @end

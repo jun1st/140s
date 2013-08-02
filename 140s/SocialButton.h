@@ -36,7 +36,7 @@ typedef void (^AccountRequestHandler)(BOOL, NSError *);
 @property (nonatomic) NetworkStatus networkStatus;
 @property (nonatomic) NetworkStatus isHostReachable;
 
-- (void) reachabilityChanged: (NSNotification* )note;
+- (void)reachabilityChanged: (NSNotification* )note;
 - (NSData *)prepareImageData:(UIImage *)image;
 - (RequestHandler)requestHandlerWithCompletion:(void(^)(BOOL, NSString *))completion;
 

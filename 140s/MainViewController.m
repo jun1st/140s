@@ -77,6 +77,31 @@
     [super viewDidAppear:animated];
     
     [self.textEdit becomeFirstResponder];
+    
+    NSString *type = NSLocalizedString(@"Language", @"language");
+    if ([type isEqualToString:@"en"])
+    {
+        [self.twitterButton requestAccessWithCompletion:^(BOOL success, NSString * result) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (!success)
+                {
+                    [SVProgressHUD showErrorWithStatus:result];
+                }
+                
+            });
+        }];
+    }
+    else{
+        [self.weiboButton requestAccessWithCompletion:^(BOOL success, NSString *result) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (!success)
+                {
+                    [SVProgressHUD showErrorWithStatus:result];
+                }
+                
+            });
+        }];
+    }
 
 }
 

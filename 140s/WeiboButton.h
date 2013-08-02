@@ -14,4 +14,6 @@
 
 @interface WeiboButton : SocialButton
 
+-(void)requestAccessWithCompletion:(void (^)(BOOL success, NSString * result))completionHandler;
+
 @end

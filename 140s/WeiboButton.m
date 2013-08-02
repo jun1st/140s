@@ -140,4 +140,31 @@
                                        completion:accountRequestHander];
 }
 
+-(void)requestAccessWithCompletion:(void (^)(BOOL success, NSString * result))completionHandler;
+{
+    // Create an account store object.
+	ACAccountStore *accountStore = [[ACAccountStore alloc] init];
+	// Create an account type that ensures Twitter accounts are retrieved.
+    ACAccountType *accountType = [accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierSinaWeibo];
+    
+    AccountRequestHandler requestAccessHandler = ^(BOOL granted, NSError * error)
+    {
+        if(!granted)
+        {
+            //No Account Settup
+            if ([error code] == 6) {
+                completionHandler(NO, @"Please setup your system weibo account first.");
+            }
+            else{
+                completionHandler(NO, @"Please grant access to your weibo account");
+            }
+        }
+    };
+    
+    // Request access from the user to use their Twitter accounts.
+    [accountStore requestAccessToAccountsWithType:accountType
+                                          options:nil
+                                       completion:requestAccessHandler];
+}
+
 @end

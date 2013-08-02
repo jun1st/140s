@@ -40,6 +40,7 @@
     Reachability* curReach = [note object];
 	NSParameterAssert([curReach isKindOfClass: [Reachability class]]);
     
+    NSLog(@"%u", [curReach currentReachabilityStatus]);
     if (curReach == self.internetReachability)
     {
         self.networkStatus = [curReach currentReachabilityStatus];

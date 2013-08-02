@@ -83,7 +83,6 @@
     }
     
     ACAccountStore *accountStore = [[ACAccountStore alloc] init];
-	
 	// Create an account type that ensures Twitter accounts are retrieved.
     ACAccountType *accountType = [accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
     
@@ -129,6 +128,33 @@
             }
         }
         else
+        {
+            if ([error code] == 6)
+            {
+                completionHandler(NO, @"Please setup your twitter account in System first!");
+            }
+            else
+            {
+                completionHandler(NO, @"Please grant access to your twitter account");
+            }
+        }
+    };
+    
+    // Request access from the user to use their Twitter accounts.
+    [accountStore requestAccessToAccountsWithType:accountType
+                                          options:nil
+                                       completion:requestAccessHandler];
+}
+
+-(void)requestAccessWithCompletion:(void (^)(BOOL success, NSString * result))completionHandler
+{
+    ACAccountStore *accountStore = [[ACAccountStore alloc] init];
+	// Create an account type that ensures Twitter accounts are retrieved.
+    ACAccountType *accountType = [accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
+    
+    AccountRequestHandler requestAccessHandler = ^(BOOL granted, NSError * error)
+    {
+        if(!granted)
         {
             if ([error code] == 6)
             {
