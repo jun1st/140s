@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C7E6A685-2261-4258-8E1E-F61D8ABC6320</string>
+	<key>IDESourceControlProjectName</key>
+	<string>140s</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>379D05E0-E680-405D-91B0-A5D44E2CE1DC</key>
+		<string>https://github.com/jun1st/140s.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>140s.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>379D05E0-E680-405D-91B0-A5D44E2CE1DC</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jun1st/140s.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>379D05E0-E680-405D-91B0-A5D44E2CE1DC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>379D05E0-E680-405D-91B0-A5D44E2CE1DC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>140s</string>
+		</dict>
+	</array>
+</dict>
+</plist>

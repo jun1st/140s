@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12F26" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hev-iw-k3G">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4488.2" systemVersion="12F30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hev-iw-k3G">
     <dependencies>
-        <deployment defaultVersion="1552" identifier="iOS"/>
-        <development version="4600" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3715.3"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
         <scene sceneID="Uv9-1o-q6B">
             <objects>
                 <viewController id="hev-iw-k3G" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mcZ-21-U4Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="mlQ-Ec-Mnn"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6I0-5V-hGx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySF-m6-ive">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="260" scoringType="23.5" id="SM6-nh-7Zc"/>
+                                    <constraint firstAttribute="height" constant="260" id="SM6-nh-7Zc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="send"/>
@@ -28,12 +32,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ySF-m6-ive" firstAttribute="leading" secondItem="6I0-5V-hGx" secondAttribute="leading" type="default" id="2u2-dN-PgB"/>
-                            <constraint firstItem="ySF-m6-ive" firstAttribute="trailing" secondItem="6I0-5V-hGx" secondAttribute="trailing" type="default" id="Da6-GP-LyU"/>
-                            <constraint firstItem="ySF-m6-ive" firstAttribute="top" secondItem="6I0-5V-hGx" secondAttribute="top" type="default" id="xTK-Aa-Ork"/>
+                            <constraint firstItem="ySF-m6-ive" firstAttribute="leading" secondItem="6I0-5V-hGx" secondAttribute="leading" id="2u2-dN-PgB"/>
+                            <constraint firstItem="ySF-m6-ive" firstAttribute="trailing" secondItem="6I0-5V-hGx" secondAttribute="trailing" id="Da6-GP-LyU"/>
+                            <constraint firstItem="ySF-m6-ive" firstAttribute="top" secondItem="6I0-5V-hGx" secondAttribute="top" id="xTK-Aa-Ork"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="textEdit" destination="ySF-m6-ive" id="sSI-7F-ICs"/>
                     </connections>
@@ -43,34 +49,6 @@
             <point key="canvasLocation" x="181" y="22"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="InputAccessoryView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/InputAccessoryView.h"/>
-            <relationships>
-                <relationship kind="action" name="pickerImage:"/>
-                <relationship kind="outlet" name="cameraButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="count" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="pickedImageView" candidateClass="UIRoundedImageView"/>
-                <relationship kind="outlet" name="statusImagePicker" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="MainViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="changeImagePickerSourceToPhotosLibrary:"/>
-                <relationship kind="action" name="takePhoto:"/>
-                <relationship kind="outlet" name="cameraOverlay" candidateClass="UIView"/>
-                <relationship kind="outlet" name="inputAccessoryView" candidateClass="InputAccessoryView"/>
-                <relationship kind="outlet" name="textEdit" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="UIRoundedImageView" superclassName="UIImageView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIRoundedImageView.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

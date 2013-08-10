@@ -21,6 +21,11 @@
 
 @implementation MainViewController
 
+-(BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -29,11 +34,6 @@
 
     }
     return self;
-}
-
--(BOOL)prefersStatusBarHidden
-{
-    return YES;
 }
 
 -(void)awakeFromNib
@@ -68,7 +68,6 @@
                                              selector:@selector(keyboardDidShow:)
                                                  name:UIKeyboardDidShowNotification
                                                object:nil];
-    
     
 }
 
@@ -311,14 +310,19 @@
 {
     UIImage *pickedImage = [info valueForKey:UIImagePickerControllerOriginalImage];
     self.inputAccessoryView.pickedImageView.roundRadius = 6.0;
-    self.inputAccessoryView.pickedImageView.image = pickedImage;
-    self.inputAccessoryView.pickedImageView.hidden = NO;
+    [self.inputAccessoryView setImage:pickedImage];
+    //self.inputAccessoryView.pickedImageView.image = pickedImage;
+    //self.inputAccessoryView.pickedImageView.hidden = NO;
     [self dismissViewControllerAnimated:YES completion:nil];
+    
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
 }
 
 -(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+    
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
 }
 
 - (IBAction)changeImagePickerSourceToPhotosLibrary:(id)sender {

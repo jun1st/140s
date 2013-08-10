@@ -75,7 +75,6 @@
 {
     if (image)
     {
-                
         self.pickedImageView.frame = self.cameraButton.frame;
         self.pickedImageView.hidden = NO;
         self.pickedImageView.image = image;

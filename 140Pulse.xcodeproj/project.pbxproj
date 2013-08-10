@@ -28,19 +28,20 @@
 		4C12E61217A423340043CB7F /* PrettyAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C12E60517A423340043CB7F /* PrettyAlertView.m */; };
 		4C12E61317A423340043CB7F /* Signika-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C12E60717A423340043CB7F /* Signika-Regular.otf */; };
 		4C12E61617A4236C0043CB7F /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C12E61417A4236C0043CB7F /* Storyboard.storyboard */; };
-		4C12E61A17A423FB0043CB7F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C12E61917A423FB0043CB7F /* Accounts.framework */; };
-		4C12E61C17A423FF0043CB7F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C12E61B17A423FF0043CB7F /* Social.framework */; };
-		4C12E61E17A424050043CB7F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C12E61D17A424050043CB7F /* QuartzCore.framework */; };
 		4C68335517A63BB800B85383 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C68335717A63BB800B85383 /* Default.png */; };
 		4C68335917A63BC300B85383 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C68335B17A63BC300B85383 /* Default@2x.png */; };
 		4C68335D17A63BC900B85383 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C68335F17A63BC900B85383 /* Default-568h@2x.png */; };
+		4CA1910C17B238E200E8F637 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA1910B17B238E200E8F637 /* QuartzCore.framework */; };
+		4CA1910E17B238E700E8F637 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA1910D17B238E700E8F637 /* Accounts.framework */; };
+		4CA1911017B238ED00E8F637 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA1910F17B238ED00E8F637 /* Social.framework */; };
+		4CA1911317B23B1E00E8F637 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA1911217B23B1E00E8F637 /* SystemConfiguration.framework */; };
+		4CA1911517B23B2C00E8F637 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA1911417B23B2C00E8F637 /* Crashlytics.framework */; };
 		4CCB094917A6C614000E022D /* SocialButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCB094817A6C614000E022D /* SocialButton.m */; };
 		4CF9A6FD17A56A26008DA683 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9A6FC17A56A26008DA683 /* MainViewController.m */; };
 		4CF9A6FF17A56A88008DA683 /* InputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF9A6FE17A56A88008DA683 /* InputAccessoryView.xib */; };
 		4CF9A70517A5744E008DA683 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CF9A70717A5744E008DA683 /* Localizable.strings */; };
 		4CF9A70917A5749E008DA683 /* CameraOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF9A70B17A5749E008DA683 /* CameraOverlayView.xib */; };
 		4CFCCC6F17A770A700739398 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFCCC6E17A770A700739398 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4CFCCC7117A7717100739398 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CFCCC7017A7717100739398 /* SystemConfiguration.framework */; };
 		4CFCCC7317A77DC200739398 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFCCC7217A77DC200739398 /* Icon.png */; };
 		4CFCCC7517A77DC600739398 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CFCCC7417A77DC600739398 /* Icon@2x.png */; };
 		AA97F98EF32049D6BA874598 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB14479F2FC84D219454076D /* libPods.a */; };
@@ -79,15 +80,17 @@
 		4C12E60617A423340043CB7F /* PrettyAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettyAlertView.h; sourceTree = "<group>"; };
 		4C12E60717A423340043CB7F /* Signika-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-Regular.otf"; sourceTree = "<group>"; };
 		4C12E61417A4236C0043CB7F /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		4C12E61917A423FB0043CB7F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
-		4C12E61B17A423FF0043CB7F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		4C12E61D17A424050043CB7F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4C68335617A63BB800B85383 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/Default.png; sourceTree = "<group>"; };
 		4C68335817A63BBC00B85383 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/Default.png"; sourceTree = "<group>"; };
 		4C68335A17A63BC300B85383 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/Default@2x.png"; sourceTree = "<group>"; };
 		4C68335C17A63BC500B85383 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/Default@2x.png"; sourceTree = "<group>"; };
 		4C68335E17A63BC900B85383 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/Default-568h@2x.png"; sourceTree = "<group>"; };
 		4C68336017A63BCC00B85383 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/Default-568h@2x.png"; sourceTree = "<group>"; };
+		4CA1910B17B238E200E8F637 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4CA1910D17B238E700E8F637 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		4CA1910F17B238ED00E8F637 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		4CA1911217B23B1E00E8F637 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4CA1911417B23B2C00E8F637 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		4CCB094717A6C614000E022D /* SocialButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialButton.h; sourceTree = "<group>"; };
 		4CCB094817A6C614000E022D /* SocialButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialButton.m; sourceTree = "<group>"; };
 		4CCB094A17A6C8AA000E022D /* SocialButton_Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialButton_Protected.h; sourceTree = "<group>"; };
@@ -100,7 +103,6 @@
 		4CF9A70C17A574A7008DA683 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CameraOverlayView.xib; sourceTree = "<group>"; };
 		4CFCCC6D17A770A700739398 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		4CFCCC6E17A770A700739398 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		4CFCCC7017A7717100739398 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4CFCCC7217A77DC200739398 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		4CFCCC7417A77DC600739398 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		DB14479F2FC84D219454076D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,14 +113,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CFCCC7117A7717100739398 /* SystemConfiguration.framework in Frameworks */,
-				4C12E61E17A424050043CB7F /* QuartzCore.framework in Frameworks */,
-				4C12E61C17A423FF0043CB7F /* Social.framework in Frameworks */,
-				4C12E61A17A423FB0043CB7F /* Accounts.framework in Frameworks */,
+				4CA1911317B23B1E00E8F637 /* SystemConfiguration.framework in Frameworks */,
+				4CA1911017B238ED00E8F637 /* Social.framework in Frameworks */,
+				4CA1910E17B238E700E8F637 /* Accounts.framework in Frameworks */,
+				4CA1910C17B238E200E8F637 /* QuartzCore.framework in Frameworks */,
 				4C12E5CC17A422DC0043CB7F /* UIKit.framework in Frameworks */,
 				4C12E5CE17A422DC0043CB7F /* Foundation.framework in Frameworks */,
 				4C12E5D017A422DC0043CB7F /* CoreGraphics.framework in Frameworks */,
 				4C12E5D217A422DC0043CB7F /* CoreData.framework in Frameworks */,
+				4CA1911517B23B2C00E8F637 /* Crashlytics.framework in Frameworks */,
 				AA97F98EF32049D6BA874598 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,13 +134,9 @@
 			children = (
 				4CFCCC7417A77DC600739398 /* Icon@2x.png */,
 				4CFCCC7217A77DC200739398 /* Icon.png */,
-				4CFCCC7017A7717100739398 /* SystemConfiguration.framework */,
 				4C68335F17A63BC900B85383 /* Default-568h@2x.png */,
 				4C68335B17A63BC300B85383 /* Default@2x.png */,
 				4C68335717A63BB800B85383 /* Default.png */,
-				4C12E61D17A424050043CB7F /* QuartzCore.framework */,
-				4C12E61B17A423FF0043CB7F /* Social.framework */,
-				4C12E61917A423FB0043CB7F /* Accounts.framework */,
 				4C12E5D317A422DC0043CB7F /* 140s */,
 				4C12E5CA17A422DC0043CB7F /* Frameworks */,
 				4C12E5C917A422DC0043CB7F /* Products */,
@@ -156,6 +155,11 @@
 		4C12E5CA17A422DC0043CB7F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4CA1911417B23B2C00E8F637 /* Crashlytics.framework */,
+				4CA1911217B23B1E00E8F637 /* SystemConfiguration.framework */,
+				4CA1910F17B238ED00E8F637 /* Social.framework */,
+				4CA1910D17B238E700E8F637 /* Accounts.framework */,
+				4CA1910B17B238E200E8F637 /* QuartzCore.framework */,
 				4C12E5CB17A422DC0043CB7F /* UIKit.framework */,
 				4C12E5CD17A422DC0043CB7F /* Foundation.framework */,
 				4C12E5CF17A422DC0043CB7F /* CoreGraphics.framework */,
@@ -235,6 +239,7 @@
 				4C12E5C517A422DC0043CB7F /* Frameworks */,
 				4C12E5C617A422DC0043CB7F /* Resources */,
 				5A4F0AEFAC4B488597D9BA6C /* Copy Pods Resources */,
+				4CA8CECA17B23A6B00A99ABF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -314,6 +319,19 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		4CA8CECA17B23A6B00A99ABF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run 8da13a85275d2a200d2814cd5236d5fd902369ec";
 		};
 		5A4F0AEFAC4B488597D9BA6C /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -437,7 +455,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -463,7 +481,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
@@ -475,6 +493,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AF67E25DB92444F8916DC51 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Qijun Feng (RX9KLU63PM)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/fengqijun/Documents/workspace/140s,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "140s/140Pulse-Prefix.pch";
 				INFOPLIST_FILE = "140s/140Pulse-Info.plist";
@@ -487,6 +510,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AF67E25DB92444F8916DC51 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Qijun Feng (RX9KLU63PM)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/fengqijun/Documents/workspace/140s,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "140s/140Pulse-Prefix.pch";
 				INFOPLIST_FILE = "140s/140Pulse-Info.plist";
