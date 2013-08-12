@@ -64,6 +64,8 @@
     [self.view addSubview:self.weiboButton];
     self.weiboButton.frame = CGRectMake(-100, 1000, 100, 57);
     
+    [self.navigationController setNavigationBarHidden:YES];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(keyboardDidShow:)
                                                  name:UIKeyboardDidShowNotification
@@ -323,6 +325,24 @@
     [self dismissViewControllerAnimated:YES completion:nil];
     
     [[UIApplication sharedApplication] setStatusBarHidden:YES];
+}
+
+
+- (IBAction)handlePinch:(UIGestureRecognizer *)gestureRecognizer
+{
+    if ([gestureRecognizer class] == [UIPinchGestureRecognizer class])
+    {
+        UIPinchGestureRecognizer *pinch = (UIPinchGestureRecognizer *)gestureRecognizer;
+        
+        if (pinch.scale > 1)
+        {
+            [self.navigationController setNavigationBarHidden:YES animated:YES];
+        }
+        else
+        {
+            [self.navigationController setNavigationBarHidden:NO animated:YES];
+        }
+    }
 }
 
 - (IBAction)changeImagePickerSourceToPhotosLibrary:(id)sender {

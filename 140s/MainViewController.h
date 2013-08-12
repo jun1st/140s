@@ -13,7 +13,7 @@
 #import <SVProgressHUD.h>
 
 
-@interface MainViewController : UIViewController<UITextViewDelegate, InputAccessoryViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface MainViewController : UIViewController<UITextViewDelegate, InputAccessoryViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIGestureRecognizerDelegate>
 {
 }
 @property (weak, nonatomic) IBOutlet UITextView *textEdit;
@@ -26,6 +26,7 @@
 - (IBAction)changeImagePickerSourceToPhotosLibrary:(id)sender;
 - (IBAction)takePhoto:(id)sender;
 
+- (IBAction)handlePinch:(UIGestureRecognizer *)gestureRecognizer;
 
 -(void)stopEditing;
 -(void)beginEditing;
