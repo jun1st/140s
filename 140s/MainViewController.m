@@ -11,6 +11,8 @@
 #import <Social/Social.h>
 #import "PrettyAlertView.h"
 #import "SocialButton.h"
+#import "Tweet+CoreData.h"
+#import "TweetsViewController.h"
 
 
 @interface MainViewController ()
@@ -71,6 +73,13 @@
                                                  name:UIKeyboardDidShowNotification
                                                object:nil];
     
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -150,8 +159,8 @@
     self.textEdit.text = @"";
 }
 
-#pragma InputAccessoryView Delegate methods
--(void)sendMessage:(id)sender
+
+-(void)sendMessage:(SocialButton *)sender
 {
     if ([self.textEdit.text length] == 0 && !self.inputAccessoryView.pickedImageView.image) {
         PrettyAlertView *alertView = [[PrettyAlertView alloc] initWithTitle:NSLocalizedString(@"No Message", @"Alert Title")
@@ -176,10 +185,14 @@
             [sender sendMessage:self.textEdit.text
                           Image:self.inputAccessoryView.pickedImageView.image
                      completion:^(BOOL successful, NSString *result) {
-                
+                         if (successful)
+                         {
+                             [Tweet insertTweetWithContent:message target:sender.titleLabel.text inManagedObjectContext:self.managedObjectContext];
+                         }
                          dispatch_async(dispatch_get_main_queue(), ^{
                              if (successful)
                              {
+                                 
                                  [SVProgressHUD showSuccessWithStatus:result];
                              }
                              else
@@ -202,7 +215,6 @@
     if (self.textEdit.text.length > 140)
     {
         self.textEdit.text = [self.textEdit.text substringToIndex:139];
-        //[SVProgressHUD showErrorWithStatus:NSLocalizedString(@"Exceed 140 characters limit", @"Length Limit")];
     }
 
     self.inputAccessoryView.count.text = [NSString stringWithFormat:@"%d", 140 - [self.textEdit.text length]];
@@ -284,12 +296,6 @@
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
     {
         self.imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
-        self.imagePickerController.showsCameraControls = NO;
-        
-        [[NSBundle mainBundle] loadNibNamed:@"CameraOverlayView" owner:self options:nil];
-        self.cameraOverlay.frame = self.imagePickerController.cameraOverlayView.frame;
-        self.imagePickerController.cameraOverlayView = self.cameraOverlay;
-        self.cameraOverlay = nil;
     }
     else
     {
@@ -345,8 +351,21 @@
     }
 }
 
+-(IBAction)swipeLeft:(UISwipeGestureRecognizer *)swipeGestureRecognizer
+{
+    if (swipeGestureRecognizer.direction == UISwipeGestureRecognizerDirectionLeft)
+    {
+        TweetsViewController *tweets = [TweetsViewController new];
+        tweets.managedObjectContext = self.managedObjectContext;
+        
+        [self.navigationController pushViewController:tweets animated:YES];
+    }
+}
+
 - (IBAction)changeImagePickerSourceToPhotosLibrary:(id)sender {
     self.imagePickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
 }
 
 - (IBAction)takePhoto:(id)sender {

@@ -23,6 +23,7 @@
     self = [super init];
     if (self)
     {
+        self.titleLabel.text = @"微博";
         self.imageSizeLimit = 5 * 1024 * 1024; //5m
         self.buttonImage = [[UIRoundedImageView alloc] init];
         self.buttonImage.image = [UIImage imageNamed:@"weibo.png"];

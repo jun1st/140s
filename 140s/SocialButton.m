@@ -27,6 +27,7 @@
     self = [super init];
     if (self)
     {
+        self.titleLabel.hidden = YES;
         [[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(reachabilityChanged:) name: kReachabilityChangedNotification object: nil];
         self.internetReachability = [Reachability reachabilityForInternetConnection];
         [self.internetReachability startNotifier];

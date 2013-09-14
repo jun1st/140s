@@ -23,6 +23,8 @@
 @property (weak, nonatomic) IBOutlet UIView * cameraOverlay;
 @property (weak, nonatomic) IBOutlet UILabel *count;
 
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
 - (IBAction)changeImagePickerSourceToPhotosLibrary:(id)sender;
 - (IBAction)takePhoto:(id)sender;
 

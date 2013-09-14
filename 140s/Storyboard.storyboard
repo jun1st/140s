@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4488.2" systemVersion="12F33" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="DNd-FG-TCS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="4510" systemVersion="12F33" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="DNd-FG-TCS">
     <dependencies>
-        <deployment defaultVersion="1792" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3715.3"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <development version="4600" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
         <scene sceneID="Uv9-1o-q6B">
             <objects>
                 <viewController id="hev-iw-k3G" customClass="MainViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mcZ-21-U4Y"/>
-                        <viewControllerLayoutGuide type="bottom" id="mlQ-Ec-Mnn"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6I0-5V-hGx">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySF-m6-ive">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="260" id="SM6-nh-7Zc"/>
+                                    <constraint firstAttribute="height" constant="260" scoringType="23.5" id="SM6-nh-7Zc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="send"/>
@@ -33,12 +30,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="ySF-m6-ive" firstAttribute="leading" secondItem="6I0-5V-hGx" secondAttribute="leading" id="2u2-dN-PgB"/>
-                            <constraint firstItem="ySF-m6-ive" firstAttribute="trailing" secondItem="6I0-5V-hGx" secondAttribute="trailing" id="Da6-GP-LyU"/>
-                            <constraint firstItem="ySF-m6-ive" firstAttribute="top" secondItem="6I0-5V-hGx" secondAttribute="top" id="xTK-Aa-Ork"/>
+                            <constraint firstItem="ySF-m6-ive" firstAttribute="leading" secondItem="6I0-5V-hGx" secondAttribute="leading" type="default" id="2u2-dN-PgB"/>
+                            <constraint firstItem="ySF-m6-ive" firstAttribute="trailing" secondItem="6I0-5V-hGx" secondAttribute="trailing" type="default" id="Da6-GP-LyU"/>
+                            <constraint firstItem="ySF-m6-ive" firstAttribute="top" secondItem="6I0-5V-hGx" secondAttribute="top" type="default" id="xTK-Aa-Ork"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="c6V-Lq-7f5" appends="YES" id="ZbG-tO-mBT"/>
+                            <outletCollection property="gestureRecognizers" destination="dSA-Yo-VOV" appends="YES" id="Unz-dM-blO"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="d1D-XQ-XjU"/>
@@ -56,6 +54,12 @@
                         <outlet property="delegate" destination="hev-iw-k3G" id="sIM-3u-J35"/>
                     </connections>
                 </pinchGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="dSA-Yo-VOV">
+                    <connections>
+                        <action selector="swipeLeft:" destination="hev-iw-k3G" id="Da1-1w-rvC"/>
+                        <outlet property="delegate" destination="hev-iw-k3G" id="LWi-f2-B2H"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="707" y="22"/>
         </scene>

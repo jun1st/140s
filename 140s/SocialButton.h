@@ -40,5 +40,4 @@ typedef void (^AccountRequestHandler)(BOOL, NSError *);
 - (NSData *)prepareImageData:(UIImage *)image;
 - (RequestHandler)requestHandlerWithCompletion:(void(^)(BOOL, NSString *))completion;
 
-
 @end

@@ -24,6 +24,7 @@
     self = [super init];
     if (self)
     {
+        self.titleLabel.text = @"Twitter";
         self.imageSizeLimit = 3145728.0f;
         self.buttonImage = [[UIRoundedImageView alloc] init];
         self.buttonImage.image = [UIImage imageNamed:@"twitter.png"];

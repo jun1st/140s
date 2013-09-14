@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Crashlytics/Crashlytics.h>
+#import "MainViewController.h"
 
 @implementation AppDelegate
 
@@ -20,6 +21,10 @@
     [Crashlytics startWithAPIKey:@"8da13a85275d2a200d2814cd5236d5fd902369ec"];
     
     [application setStatusBarHidden:YES];
+    
+    UINavigationController *navController = (UINavigationController *)self.window.rootViewController;
+    MainViewController *mainController = (MainViewController *)[navController.viewControllers objectAtIndex:0];
+    mainController.managedObjectContext = [self managedObjectContext];
     return YES;
 }
 
@@ -108,6 +113,9 @@
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+        
+        //Simply deleting the existing store:
+        [[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil];
         /*
          Replace this implementation with code to handle the error appropriately.
          
@@ -122,8 +130,7 @@
          If the persistent store is not accessible, there is typically something wrong with the file path. Often, a file URL is pointing into the application's resources directory instead of a writeable directory.
          
          If you encounter schema incompatibility errors during development, you can reduce their frequency by:
-         * Simply deleting the existing store:
-         [[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil]
+
          
          * Performing automatic lightweight migration by passing the following dictionary as the options parameter:
          @{NSMigratePersistentStoresAutomaticallyOption:@YES, NSInferMappingModelAutomaticallyOption:@YES}
@@ -132,7 +139,7 @@
          
          */
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        abort();
+        //abort();
     }    
     
     return _persistentStoreCoordinator;

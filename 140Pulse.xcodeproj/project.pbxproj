@@ -37,6 +37,12 @@
 		4CA1911317B23B1E00E8F637 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA1911217B23B1E00E8F637 /* SystemConfiguration.framework */; };
 		4CA1911517B23B2C00E8F637 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA1911417B23B2C00E8F637 /* Crashlytics.framework */; };
 		4CCB094917A6C614000E022D /* SocialButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCB094817A6C614000E022D /* SocialButton.m */; };
+		4CD6C25217E3FA3E00B7E874 /* Tweet+CoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD6C25117E3FA3E00B7E874 /* Tweet+CoreData.m */; };
+		4CD6C25917E3FF0D00B7E874 /* TweetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD6C25717E3FF0D00B7E874 /* TweetsViewController.m */; };
+		4CD6C25D17E410C200B7E874 /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD6C25C17E410C200B7E874 /* NSDate+Helper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4CD6C25F17E4235A00B7E874 /* TweetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD6C25E17E4235A00B7E874 /* TweetsViewController.xib */; };
+		4CD6C26617E4401B00B7E874 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD6C26517E4401B00B7E874 /* back@2x.png */; };
+		4CD6C26917E4AD2300B7E874 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD6C26817E4AD2300B7E874 /* Tweet.m */; };
 		4CF9A6FD17A56A26008DA683 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9A6FC17A56A26008DA683 /* MainViewController.m */; };
 		4CF9A6FF17A56A88008DA683 /* InputAccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF9A6FE17A56A88008DA683 /* InputAccessoryView.xib */; };
 		4CF9A70517A5744E008DA683 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CF9A70717A5744E008DA683 /* Localizable.strings */; };
@@ -94,6 +100,16 @@
 		4CCB094717A6C614000E022D /* SocialButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialButton.h; sourceTree = "<group>"; };
 		4CCB094817A6C614000E022D /* SocialButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialButton.m; sourceTree = "<group>"; };
 		4CCB094A17A6C8AA000E022D /* SocialButton_Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialButton_Protected.h; sourceTree = "<group>"; };
+		4CD6C25017E3FA3E00B7E874 /* Tweet+CoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tweet+CoreData.h"; sourceTree = "<group>"; };
+		4CD6C25117E3FA3E00B7E874 /* Tweet+CoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Tweet+CoreData.m"; sourceTree = "<group>"; };
+		4CD6C25617E3FF0D00B7E874 /* TweetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetsViewController.h; sourceTree = "<group>"; };
+		4CD6C25717E3FF0D00B7E874 /* TweetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetsViewController.m; sourceTree = "<group>"; };
+		4CD6C25B17E410C200B7E874 /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
+		4CD6C25C17E410C200B7E874 /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
+		4CD6C25E17E4235A00B7E874 /* TweetsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetsViewController.xib; sourceTree = "<group>"; };
+		4CD6C26517E4401B00B7E874 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		4CD6C26717E4AD2300B7E874 /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
+		4CD6C26817E4AD2300B7E874 /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
 		4CF9A6FC17A56A26008DA683 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		4CF9A6FE17A56A88008DA683 /* InputAccessoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputAccessoryView.xib; sourceTree = "<group>"; };
 		4CF9A70417A57443008DA683 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
@@ -132,11 +148,6 @@
 		4C12E5BF17A422DC0043CB7F = {
 			isa = PBXGroup;
 			children = (
-				4CFCCC7417A77DC600739398 /* Icon@2x.png */,
-				4CFCCC7217A77DC200739398 /* Icon.png */,
-				4C68335F17A63BC900B85383 /* Default-568h@2x.png */,
-				4C68335B17A63BC300B85383 /* Default@2x.png */,
-				4C68335717A63BB800B85383 /* Default.png */,
 				4C12E5D317A422DC0043CB7F /* 140s */,
 				4C12E5CA17A422DC0043CB7F /* Frameworks */,
 				4C12E5C917A422DC0043CB7F /* Products */,
@@ -172,29 +183,28 @@
 		4C12E5D317A422DC0043CB7F /* 140s */ = {
 			isa = PBXGroup;
 			children = (
+				4CD6C24F17E3F82800B7E874 /* Images */,
 				4CFCCC6D17A770A700739398 /* Reachability.h */,
 				4CFCCC6E17A770A700739398 /* Reachability.m */,
+				4CD6C25B17E410C200B7E874 /* NSDate+Helper.h */,
+				4CD6C25C17E410C200B7E874 /* NSDate+Helper.m */,
 				4C12E61417A4236C0043CB7F /* Storyboard.storyboard */,
-				4C12E5F517A423340043CB7F /* TwitterButton.h */,
-				4C12E5F717A423340043CB7F /* TwitterButton.m */,
-				4C12E5FC17A423340043CB7F /* WeiboButton.h */,
-				4C12E5F817A423340043CB7F /* WeiboButton.m */,
-				4CCB094717A6C614000E022D /* SocialButton.h */,
-				4CCB094817A6C614000E022D /* SocialButton.m */,
+				4CD6C24E17E3F80A00B7E874 /* Controls */,
 				4CCB094A17A6C8AA000E022D /* SocialButton_Protected.h */,
-				4C12E5FA17A423340043CB7F /* InputAccessoryView.h */,
-				4C12E5F917A423340043CB7F /* InputAccessoryView.m */,
-				4C12E5FE17A423340043CB7F /* UIRoundedImageView.h */,
-				4C12E5FD17A423340043CB7F /* UIRoundedImageView.m */,
-				4C12E60617A423340043CB7F /* PrettyAlertView.h */,
-				4C12E60517A423340043CB7F /* PrettyAlertView.m */,
 				4C659E7517A4BCE600B0086D /* Resources */,
 				4C12E60717A423340043CB7F /* Signika-Regular.otf */,
 				4C12E5F617A423340043CB7F /* MainViewController.h */,
 				4CF9A6FC17A56A26008DA683 /* MainViewController.m */,
+				4CD6C25617E3FF0D00B7E874 /* TweetsViewController.h */,
+				4CD6C25717E3FF0D00B7E874 /* TweetsViewController.m */,
+				4CD6C25E17E4235A00B7E874 /* TweetsViewController.xib */,
 				4C12E5DC17A422DC0043CB7F /* AppDelegate.h */,
 				4C12E5DD17A422DC0043CB7F /* AppDelegate.m */,
 				4C12E5E517A422DC0043CB7F /* _40s.xcdatamodeld */,
+				4CD6C26717E4AD2300B7E874 /* Tweet.h */,
+				4CD6C26817E4AD2300B7E874 /* Tweet.m */,
+				4CD6C25017E3FA3E00B7E874 /* Tweet+CoreData.h */,
+				4CD6C25117E3FA3E00B7E874 /* Tweet+CoreData.m */,
 				4C12E5D417A422DC0043CB7F /* Supporting Files */,
 				4CF9A6FE17A56A88008DA683 /* InputAccessoryView.xib */,
 				4CF9A70B17A5749E008DA683 /* CameraOverlayView.xib */,
@@ -225,6 +235,39 @@
 				4C12E60417A423340043CB7F /* twitter@2x.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		4CD6C24E17E3F80A00B7E874 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				4C12E5F517A423340043CB7F /* TwitterButton.h */,
+				4C12E5F717A423340043CB7F /* TwitterButton.m */,
+				4C12E5FC17A423340043CB7F /* WeiboButton.h */,
+				4C12E5F817A423340043CB7F /* WeiboButton.m */,
+				4CCB094717A6C614000E022D /* SocialButton.h */,
+				4CCB094817A6C614000E022D /* SocialButton.m */,
+				4C12E5FA17A423340043CB7F /* InputAccessoryView.h */,
+				4C12E5F917A423340043CB7F /* InputAccessoryView.m */,
+				4C12E5FE17A423340043CB7F /* UIRoundedImageView.h */,
+				4C12E5FD17A423340043CB7F /* UIRoundedImageView.m */,
+				4C12E60617A423340043CB7F /* PrettyAlertView.h */,
+				4C12E60517A423340043CB7F /* PrettyAlertView.m */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		4CD6C24F17E3F82800B7E874 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4CD6C26517E4401B00B7E874 /* back@2x.png */,
+				4CFCCC7417A77DC600739398 /* Icon@2x.png */,
+				4CFCCC7217A77DC200739398 /* Icon.png */,
+				4C68335F17A63BC900B85383 /* Default-568h@2x.png */,
+				4C68335B17A63BC300B85383 /* Default@2x.png */,
+				4C68335717A63BB800B85383 /* Default.png */,
+			);
+			name = Images;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,12 +325,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD6C26617E4401B00B7E874 /* back@2x.png in Resources */,
 				4C12E5D817A422DC0043CB7F /* InfoPlist.strings in Resources */,
 				4C12E60C17A423340043CB7F /* camera.png in Resources */,
 				4C12E60D17A423340043CB7F /* camera@2x.png in Resources */,
 				4C12E60E17A423340043CB7F /* weibo.png in Resources */,
 				4C12E60F17A423340043CB7F /* weibo@2x.png in Resources */,
 				4C12E61017A423340043CB7F /* twitter.png in Resources */,
+				4CD6C25F17E4235A00B7E874 /* TweetsViewController.xib in Resources */,
 				4C12E61117A423340043CB7F /* twitter@2x.png in Resources */,
 				4C12E61317A423340043CB7F /* Signika-Regular.otf in Resources */,
 				4C12E61617A4236C0043CB7F /* Storyboard.storyboard in Resources */,
@@ -360,10 +405,14 @@
 				4C12E5E717A422DC0043CB7F /* _40s.xcdatamodeld in Sources */,
 				4C12E60817A423340043CB7F /* TwitterButton.m in Sources */,
 				4C12E60917A423340043CB7F /* WeiboButton.m in Sources */,
+				4CD6C25D17E410C200B7E874 /* NSDate+Helper.m in Sources */,
+				4CD6C25917E3FF0D00B7E874 /* TweetsViewController.m in Sources */,
 				4C12E60A17A423340043CB7F /* InputAccessoryView.m in Sources */,
 				4C12E60B17A423340043CB7F /* UIRoundedImageView.m in Sources */,
 				4C12E61217A423340043CB7F /* PrettyAlertView.m in Sources */,
+				4CD6C25217E3FA3E00B7E874 /* Tweet+CoreData.m in Sources */,
 				4CF9A6FD17A56A26008DA683 /* MainViewController.m in Sources */,
+				4CD6C26917E4AD2300B7E874 /* Tweet.m in Sources */,
 				4CCB094917A6C614000E022D /* SocialButton.m in Sources */,
 				4CFCCC6F17A770A700739398 /* Reachability.m in Sources */,
 			);
@@ -501,6 +550,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "140s/140Pulse-Prefix.pch";
 				INFOPLIST_FILE = "140s/140Pulse-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = 140Pulse;
 				WRAPPER_EXTENSION = app;
 			};
@@ -518,6 +568,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "140s/140Pulse-Prefix.pch";
 				INFOPLIST_FILE = "140s/140Pulse-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = 140Pulse;
 				WRAPPER_EXTENSION = app;
 			};
