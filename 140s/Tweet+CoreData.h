@@ -16,4 +16,6 @@
 
 +(NSArray *)tweetsInManagedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 
+- (BOOL)isSentToTarget:(NSString *)target;
+
 @end

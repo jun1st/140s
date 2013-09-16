@@ -84,7 +84,17 @@
     [request setSortDescriptors:@[sortDescriptor]];
     
     return [managedObjectContext executeFetchRequest:request error:nil];
+}
 
+- (BOOL)isSentToTarget:(NSString *)target
+{
+    if ([self.target rangeOfString:target options:NSCaseInsensitiveSearch].location != NSNotFound)
+    {
+        return YES;
+    }
+    else{
+        return NO;
+    }
 }
 
 @end

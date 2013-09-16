@@ -19,6 +19,9 @@
 @property (nonatomic, strong) UIColor *timeColor;
 @property (nonatomic, strong) NSDictionary *contentAttributes;
 @property (nonatomic, strong) NSDictionary *timeAttributes;
+@property (nonatomic, strong) UIImage *weiboImage;
+@property (nonatomic, strong) UIImage *twitterImage;
+
 @end
 
 @implementation TweetsViewController
@@ -83,6 +86,25 @@
     return _timeAttributes;
 }
 
+-(UIImage *)weiboImage
+{
+    if (!_weiboImage)
+    {
+        _weiboImage = [UIImage imageNamed:@"weibo.png"];
+    }
+    return _weiboImage;
+}
+
+-(UIImage *)twitterImage
+{
+    if (!_twitterImage)
+    {
+        _twitterImage = [UIImage imageNamed:@"twitter.png"];
+    }
+    
+    return _twitterImage;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -139,6 +161,13 @@
         timeLabel.font = self.timeFont;
         [cell addSubview:timeLabel];
         
+        UIImageView *weiboImageView = [[UIImageView alloc] initWithFrame:CGRectMake(260, 20, 16, 16)];
+        weiboImageView.tag = 3;
+        [cell addSubview:weiboImageView];
+        
+        UIImageView *twitterImageView = [[UIImageView alloc] initWithFrame:CGRectMake(280, 20, 16, 16)];
+        twitterImageView.tag = 4;
+        [cell addSubview:twitterImageView];
     }
     
     Tweet *tweet = (Tweet *)[self.tweets objectAtIndex:indexPath.row];
@@ -159,6 +188,34 @@
     frame.origin.y = newContentFrame.origin.y + newContentFrame.size.height + 8;
     timeLabel.frame = frame;
     timeLabel.text = [tweet.postTime stringDaysAgo];
+    
+    UIImageView *weiboImageView = (UIImageView *)[cell viewWithTag:3];
+    if ([tweet isSentToTarget:@"Weibo"])
+    {
+        weiboImageView.hidden = NO;
+        weiboImageView.image = self.weiboImage;
+        CGRect frame = weiboImageView.frame;
+        frame.origin.y = timeLabel.frame.origin.y;
+        weiboImageView.frame = frame;
+    }
+    else
+    {
+        weiboImageView.hidden = YES;
+    }
+    
+    UIImageView *twitterImageView = (UIImageView *)[cell viewWithTag:4];
+    if ([tweet isSentToTarget:@"Twitter"])
+    {
+        twitterImageView.hidden = NO;
+        twitterImageView.image = self.weiboImage;
+        CGRect frame = twitterImageView.frame;
+        frame.origin.y = timeLabel.frame.origin.y;
+        twitterImageView.frame = frame;
+    }
+    else
+    {
+        twitterImageView.hidden = YES;
+    }
     
     return cell;
 }

@@ -64,13 +64,13 @@
 	NSString *text = nil;
 	switch (daysAgo) {
 		case 0:
-			text = @"today";
+			text = NSLocalizedString(@"today", @"today");
 			break;
 		case 1:
-			text = @"yesterday";
+			text = NSLocalizedString(@"yesterday", @"yesterday");
 			break;
 		default:
-			text = [NSString stringWithFormat:@"%d days ago", (NSInteger)daysAgo];
+			text = [NSString stringWithFormat:@"%d%@", (NSInteger)daysAgo, NSLocalizedString(@"day's ago", @"day's ago")];
 	}
 	return text;
 }
