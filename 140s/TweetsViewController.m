@@ -208,7 +208,7 @@
     if ([tweet isSentToTarget:@"Twitter"])
     {
         twitterImageView.hidden = NO;
-        twitterImageView.image = self.weiboImage;
+        twitterImageView.image = self.twitterImage;
         CGRect frame = twitterImageView.frame;
         frame.origin.y = timeLabel.frame.origin.y;
         twitterImageView.frame = frame;

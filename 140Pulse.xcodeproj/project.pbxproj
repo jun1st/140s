@@ -36,6 +36,9 @@
 		4CA1911017B238ED00E8F637 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA1910F17B238ED00E8F637 /* Social.framework */; };
 		4CA1911317B23B1E00E8F637 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA1911217B23B1E00E8F637 /* SystemConfiguration.framework */; };
 		4CA1911517B23B2C00E8F637 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA1911417B23B2C00E8F637 /* Crashlytics.framework */; };
+		4CA61C5A17E7DED4005B09E7 /* Icon-120@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA61C5917E7DED4005B09E7 /* Icon-120@2x.png */; };
+		4CA61C5D17E7DF5E005B09E7 /* Icon-58@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA61C5B17E7DF5E005B09E7 /* Icon-58@2x.png */; };
+		4CA61C5E17E7DF5E005B09E7 /* Icon-80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA61C5C17E7DF5E005B09E7 /* Icon-80@2x.png */; };
 		4CCB094917A6C614000E022D /* SocialButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCB094817A6C614000E022D /* SocialButton.m */; };
 		4CD6C25217E3FA3E00B7E874 /* Tweet+CoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD6C25117E3FA3E00B7E874 /* Tweet+CoreData.m */; };
 		4CD6C25917E3FF0D00B7E874 /* TweetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD6C25717E3FF0D00B7E874 /* TweetsViewController.m */; };
@@ -97,6 +100,9 @@
 		4CA1910F17B238ED00E8F637 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		4CA1911217B23B1E00E8F637 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4CA1911417B23B2C00E8F637 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		4CA61C5917E7DED4005B09E7 /* Icon-120@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120@2x.png"; sourceTree = "<group>"; };
+		4CA61C5B17E7DF5E005B09E7 /* Icon-58@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-58@2x.png"; sourceTree = "<group>"; };
+		4CA61C5C17E7DF5E005B09E7 /* Icon-80@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-80@2x.png"; sourceTree = "<group>"; };
 		4CCB094717A6C614000E022D /* SocialButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialButton.h; sourceTree = "<group>"; };
 		4CCB094817A6C614000E022D /* SocialButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialButton.m; sourceTree = "<group>"; };
 		4CCB094A17A6C8AA000E022D /* SocialButton_Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialButton_Protected.h; sourceTree = "<group>"; };
@@ -259,6 +265,9 @@
 		4CD6C24F17E3F82800B7E874 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				4CA61C5B17E7DF5E005B09E7 /* Icon-58@2x.png */,
+				4CA61C5C17E7DF5E005B09E7 /* Icon-80@2x.png */,
+				4CA61C5917E7DED4005B09E7 /* Icon-120@2x.png */,
 				4CD6C26517E4401B00B7E874 /* back@2x.png */,
 				4CFCCC7417A77DC600739398 /* Icon@2x.png */,
 				4CFCCC7217A77DC200739398 /* Icon.png */,
@@ -325,11 +334,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA61C5D17E7DF5E005B09E7 /* Icon-58@2x.png in Resources */,
 				4CD6C26617E4401B00B7E874 /* back@2x.png in Resources */,
 				4C12E5D817A422DC0043CB7F /* InfoPlist.strings in Resources */,
 				4C12E60C17A423340043CB7F /* camera.png in Resources */,
 				4C12E60D17A423340043CB7F /* camera@2x.png in Resources */,
 				4C12E60E17A423340043CB7F /* weibo.png in Resources */,
+				4CA61C5A17E7DED4005B09E7 /* Icon-120@2x.png in Resources */,
 				4C12E60F17A423340043CB7F /* weibo@2x.png in Resources */,
 				4C12E61017A423340043CB7F /* twitter.png in Resources */,
 				4CD6C25F17E4235A00B7E874 /* TweetsViewController.xib in Resources */,
@@ -344,6 +355,7 @@
 				4C68335D17A63BC900B85383 /* Default-568h@2x.png in Resources */,
 				4CFCCC7317A77DC200739398 /* Icon.png in Resources */,
 				4CFCCC7517A77DC600739398 /* Icon@2x.png in Resources */,
+				4CA61C5E17E7DF5E005B09E7 /* Icon-80@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,7 +562,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "140s/140Pulse-Prefix.pch";
 				INFOPLIST_FILE = "140s/140Pulse-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = 140Pulse;
 				WRAPPER_EXTENSION = app;
 			};
@@ -568,7 +580,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "140s/140Pulse-Prefix.pch";
 				INFOPLIST_FILE = "140s/140Pulse-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = 140Pulse;
 				WRAPPER_EXTENSION = app;
 			};
