@@ -149,10 +149,11 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         
-        UILabel *contentLabel = [[UILabel alloc] initWithFrame:CGRectMake(16, 8, 320, 4)];
+        UILabel *contentLabel = [[UILabel alloc] initWithFrame:CGRectMake(16, 8, 300, 4)];
         contentLabel.tag = 1;
         contentLabel.textColor = self.contentColor;
         contentLabel.font = self.contentFont;
+        contentLabel.numberOfLines = 0;
         [cell addSubview:contentLabel];
         
         UILabel *timeLabel = [[UILabel alloc] initWithFrame:CGRectMake(16, 20, 200, 16)];
@@ -173,11 +174,11 @@
     Tweet *tweet = (Tweet *)[self.tweets objectAtIndex:indexPath.row];
     
     UILabel *contentLabel = (UILabel *)[cell viewWithTag:1];
-    
+    NSStringDrawingContext *context = [NSStringDrawingContext new];
     CGRect rect = [tweet.content boundingRectWithSize:CGSizeMake(280.0f, 6000.0f)
                                               options:NSStringDrawingUsesLineFragmentOrigin
                                            attributes:self.contentAttributes
-                                              context:nil];
+                                              context:context];
     CGRect newContentFrame = contentLabel.frame;
     newContentFrame.size.height = rect.size.height;
     contentLabel.frame = newContentFrame;
