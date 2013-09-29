@@ -9,6 +9,7 @@
 #import "TweetsViewController.h"
 #import "Tweet+CoreData.h"
 #import "NSDate+Helper.h"
+#import <CoreText/CoreText.h>
 
 @interface TweetsViewController ()
 
@@ -60,7 +61,12 @@
 {
     if(!_contentAttributes)
     {
-        _contentAttributes = @{NSFontAttributeName: [UIFont fontWithName:@"Helvetica Neue" size:12.0f]};
+        NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle defaultParagraphStyle] mutableCopy];
+        [paragraphStyle setLineSpacing:4] ;
+        _contentAttributes = @{
+                               NSFontAttributeName: [UIFont fontWithName:@"Helvetica Neue" size:12.0f],
+                               NSParagraphStyleAttributeName: paragraphStyle
+                               };
     }
     
     return _contentAttributes;
@@ -148,10 +154,11 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        
-        UILabel *contentLabel = [[UILabel alloc] initWithFrame:CGRectMake(16, 8, 300, 4)];
+        //cell.backgroundColor = [UIColor blueColor];
+        UILabel *contentLabel = [[UILabel alloc] initWithFrame:CGRectMake(16, 0, 300, 4)];
         contentLabel.tag = 1;
         contentLabel.textColor = self.contentColor;
+        //contentLabel.backgroundColor = [UIColor redColor];
         contentLabel.font = self.contentFont;
         contentLabel.numberOfLines = 0;
         [cell addSubview:contentLabel];
@@ -174,19 +181,26 @@
     Tweet *tweet = (Tweet *)[self.tweets objectAtIndex:indexPath.row];
     
     UILabel *contentLabel = (UILabel *)[cell viewWithTag:1];
-    NSStringDrawingContext *context = [NSStringDrawingContext new];
-    CGRect rect = [tweet.content boundingRectWithSize:CGSizeMake(280.0f, 6000.0f)
-                                              options:NSStringDrawingUsesLineFragmentOrigin
+    
+    //NSAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:tweet.content attributes:self.contentAttributes];
+    
+//    CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString((__bridge CFAttributedStringRef)attrString);
+//    CGSize targetSize = CGSizeMake(300, CGFLOAT_MAX);
+//    CGSize fitSize = CTFramesetterSuggestFrameSizeWithConstraints(framesetter, CFRangeMake(0, [tweet.content length]), NULL, targetSize, NULL);
+//    CFRelease(framesetter);
+    
+    CGRect rect = [tweet.content boundingRectWithSize:CGSizeMake(300.0f, CGFLOAT_MAX)
+                                              options:(NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading)
                                            attributes:self.contentAttributes
-                                              context:context];
+                                              context:nil];
     CGRect newContentFrame = contentLabel.frame;
-    newContentFrame.size.height = rect.size.height;
+    newContentFrame.size.height = ceilf( ceilf(rect.size.height) / 12 + 1 ) * 12;
     contentLabel.frame = newContentFrame;
     contentLabel.text = tweet.content;
     
     UILabel *timeLabel = (UILabel *)[cell viewWithTag:2];
     CGRect frame = timeLabel.frame;
-    frame.origin.y = newContentFrame.origin.y + newContentFrame.size.height + 8;
+    frame.origin.y = newContentFrame.origin.y + newContentFrame.size.height;
     timeLabel.frame = frame;
     timeLabel.text = [tweet.postTime stringDaysAgo];
     
@@ -229,7 +243,7 @@
                                            attributes:self.contentAttributes
                                               context:nil];
     
-    return rect.size.height + 40;
+    return ceilf( ceilf(rect.size.height) / 12 + 1 ) * 12 + 24;
 }
 
 /*
