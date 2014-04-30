@@ -23,11 +23,6 @@
 
 @implementation MainViewController
 
--(BOOL)prefersStatusBarHidden
-{
-    return YES;
-}
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -38,10 +33,9 @@
     return self;
 }
 
--(void)awakeFromNib
-{
-    [super awakeFromNib];
-}
+//-(UIStatusBarStyle)preferredStatusBarStyle{
+//    return UIStatusBarStyleLightContent;
+//}
 
 - (void)viewDidLoad
 {
@@ -66,8 +60,12 @@
     [self.view addSubview:self.weiboButton];
     self.weiboButton.frame = CGRectMake(-100, 1000, 100, 57);
     
-    [self.navigationController setNavigationBarHidden:YES];
-    
+    self.title = @"New Tweet";
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Menu.png"]
+                                                                             style:UIBarButtonItemStylePlain
+                                                                            target:self
+                                                                            action:nil];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(keyboardDidShow:)
                                                  name:UIKeyboardDidShowNotification
@@ -79,7 +77,6 @@
 {
     [super viewWillAppear:animated];
     
-    [self.navigationController setNavigationBarHidden:YES animated:animated];
 }
 
 -(void)viewDidAppear:(BOOL)animated

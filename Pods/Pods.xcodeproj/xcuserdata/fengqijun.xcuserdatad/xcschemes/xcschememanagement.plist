@@ -4,95 +4,35 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-Reachability.xcscheme</key>
+		<key>Pods-SDWebImage.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-SVProgressHUD.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>03B08918053443F18AB3AFB3</key>
+		<key>00ED6DA34D6842959647CA08</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>15E86804E0FD4736AF376EDB</key>
+		<key>01CC450AA46C4AC580037921</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>384C3ADE59F6468C8D1A52BE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4194A976F0B7435EAE13EA9F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>6801E7D50F9F4C9B9CEFD13C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>75EAD3A673B4440E811C20AB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>792872D4ED1A4DD695BAEBCE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8344329AA4074E6FBE1A4B66</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>89A378F9ACFC48E5A74EC37D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>89ACBA9C95CA44488A7F1A55</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8C5CB095C5BD429CB3181A05</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9D31E77A81E741BD835BF6AE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C9531FDDDF2B402BB09DEB83</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D1B721B026EC4335821EE073</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DEFABA51ACE2416FBC075BD4</key>
+		<key>5B50ACFB1CA14EC1A128E4A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

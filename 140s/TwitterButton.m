@@ -10,6 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import <Social/Social.h>
 #import <Accounts/Accounts.h>
+#import "Reachability.h"
 
 #define TWITTER_TEXT_URL @"https://api.twitter.com/1.1/statuses/update.json";
 #define TWITTER_IMAGE_URL @"https://api.twitter.com/1.1/statuses/update_with_media.json";

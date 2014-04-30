@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import <Crashlytics/Crashlytics.h>
 #import "MainViewController.h"
+#import <JSAdvertisingSDK/JSAdvertisingSDK.h>
+
 
 @implementation AppDelegate
 
@@ -19,9 +21,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [Crashlytics startWithAPIKey:@"8da13a85275d2a200d2814cd5236d5fd902369ec"];
-    
-    [application setStatusBarHidden:YES];
-    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:44.0/255.0f green:154.0/255.0 blue:225.0/255.0 alpha:1.0]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     UINavigationController *navController = (UINavigationController *)self.window.rootViewController;
     MainViewController *mainController = (MainViewController *)[navController.viewControllers objectAtIndex:0];
     mainController.managedObjectContext = [self managedObjectContext];

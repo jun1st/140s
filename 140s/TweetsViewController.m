@@ -243,7 +243,7 @@
                                            attributes:self.contentAttributes
                                               context:nil];
     
-    return ceilf( ceilf(rect.size.height) / 12 + 1 ) * 12 + 24;
+    return ceilf(rect.size.height) + 34;
 }
 
 /*

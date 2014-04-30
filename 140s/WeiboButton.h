@@ -11,6 +11,7 @@
 #import "SocialButton_Protected.h"
 #import <Social/Social.h>
 #import <Accounts/Accounts.h>
+#import "Reachability.h"
 
 @interface WeiboButton : SocialButton
 
