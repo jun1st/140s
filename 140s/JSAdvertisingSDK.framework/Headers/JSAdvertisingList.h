@@ -25,9 +25,5 @@
  */
 @property (readonly, nonatomic, strong) NSString* text;
 
-/*!
- *  弹出时间
- */
-@property (readonly, nonatomic) double time;
 
 @end

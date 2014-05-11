@@ -30,8 +30,8 @@
 
         [self addSubview:self.buttonImage];
         self.hostname = @"www.weibo.com";
-        self.hostReachability = [Reachability reachabilityWithHostName:self.hostname];
-        [self.hostReachability startNotifier];
+//        self.hostReachability = [Reachability reachabilityWithHostName:self.hostname];
+//        [self.hostReachability startNotifier];
     }
     
     return self;

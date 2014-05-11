@@ -63,6 +63,15 @@ typedef NS_ENUM(NSInteger, JSAdvertisingStyle)
 - (NSDictionary*)advertisingWithStyle:(JSAdvertisingStyle)style;
 
 /*!
+ *  根据广告类型返回相应的广告，在接受到 kJSAdvertisingGetInfoNotification 通知之后调用，否则返回的数据为空
+ *
+ *  @param style 广告类型
+ *
+ *  @return 广告数据数组
+ */
+- (NSArray*)advertisingsWithStyle:(JSAdvertisingStyle)style;
+
+/*!
  *  返回列表广告在列表中的位置
  *
  *  @param adInfo 广告位ID

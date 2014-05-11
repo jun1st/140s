@@ -13,7 +13,13 @@
 
 #import "JSAdvertisingManager.h"
 #import "JSAdvertising.h"
-#import "JSAdvertisingImage.h"
+#import "JSAdvertisingAlert.h"
+#import "JSAdvertisingPop.h"
+#import "JSAdvertisingForcibly.h"
 #import "JSAdvertisingList.h"
+#import "JSAdvertisingImage.h"
+
+#import "JSApplicationManager.h"
+#import "JSApplicationNetworkManager.h"
 
 #endif /* _JISHENG_ADVERTISING_SDK_ */

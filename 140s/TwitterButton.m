@@ -33,8 +33,8 @@
         
         self.hostname = @"www.twitter.com";
         
-        self.hostReachability = [Reachability reachabilityWithHostName:self.hostname];
-        [self.hostReachability startNotifier];
+//        self.hostReachability = [Reachability reachabilityWithHostName:self.hostname];
+//        [self.hostReachability startNotifier];
         
     }
     

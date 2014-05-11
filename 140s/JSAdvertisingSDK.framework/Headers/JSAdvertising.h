@@ -24,6 +24,12 @@
  */
 @property (nonatomic, strong, readonly) NSString* link;
 
+
+/*!
+ *  弹出时间 (没有时间类型的广告直接返回0)
+ */
+@property (readonly, nonatomic) double time;
+
 /*!
  *  广告数据的初始化
  *

@@ -31,14 +31,13 @@
 		4C68335517A63BB800B85383 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C68335717A63BB800B85383 /* Default.png */; };
 		4C68335917A63BC300B85383 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C68335B17A63BC300B85383 /* Default@2x.png */; };
 		4C68335D17A63BC900B85383 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C68335F17A63BC900B85383 /* Default-568h@2x.png */; };
-		4C8BBBCD19111A9D00EC3118 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8BBBCC19111A9D00EC3118 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		4C8BBBFC19111E6400EC3118 /* JSAdvertisingImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4C8BBBFA19111E6400EC3118 /* JSAdvertisingImages.bundle */; };
-		4C8BBBFD19111E6400EC3118 /* JSAdvertisingSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8BBBFB19111E6400EC3118 /* JSAdvertisingSDK.framework */; };
+		4CA0C3421915F20C003E83D9 /* JSAdvertisingImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4CA0C3401915F20C003E83D9 /* JSAdvertisingImages.bundle */; };
+		4CA0C3431915F20C003E83D9 /* JSAdvertisingSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA0C3411915F20C003E83D9 /* JSAdvertisingSDK.framework */; };
+		4CA0C3461915F294003E83D9 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0C3451915F294003E83D9 /* Reachability.m */; };
 		4CA1910C17B238E200E8F637 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA1910B17B238E200E8F637 /* QuartzCore.framework */; };
 		4CA1910E17B238E700E8F637 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA1910D17B238E700E8F637 /* Accounts.framework */; };
 		4CA1911017B238ED00E8F637 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA1910F17B238ED00E8F637 /* Social.framework */; };
 		4CA1911317B23B1E00E8F637 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA1911217B23B1E00E8F637 /* SystemConfiguration.framework */; };
-		4CA1911517B23B2C00E8F637 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA1911417B23B2C00E8F637 /* Crashlytics.framework */; };
 		4CA61C5A17E7DED4005B09E7 /* Icon-120@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA61C5917E7DED4005B09E7 /* Icon-120@2x.png */; };
 		4CA61C5D17E7DF5E005B09E7 /* Icon-58@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA61C5B17E7DF5E005B09E7 /* Icon-58@2x.png */; };
 		4CA61C5E17E7DF5E005B09E7 /* Icon-80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA61C5C17E7DF5E005B09E7 /* Icon-80@2x.png */; };
@@ -99,10 +98,10 @@
 		4C68335C17A63BC500B85383 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/Default@2x.png"; sourceTree = "<group>"; };
 		4C68335E17A63BC900B85383 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/Default-568h@2x.png"; sourceTree = "<group>"; };
 		4C68336017A63BCC00B85383 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/Default-568h@2x.png"; sourceTree = "<group>"; };
-		4C8BBBCB19111A9D00EC3118 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		4C8BBBCC19111A9D00EC3118 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		4C8BBBFA19111E6400EC3118 /* JSAdvertisingImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JSAdvertisingImages.bundle; sourceTree = "<group>"; };
-		4C8BBBFB19111E6400EC3118 /* JSAdvertisingSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSAdvertisingSDK.framework; sourceTree = "<group>"; };
+		4CA0C3401915F20C003E83D9 /* JSAdvertisingImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JSAdvertisingImages.bundle; sourceTree = "<group>"; };
+		4CA0C3411915F20C003E83D9 /* JSAdvertisingSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSAdvertisingSDK.framework; sourceTree = "<group>"; };
+		4CA0C3441915F294003E83D9 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		4CA0C3451915F294003E83D9 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		4CA1910B17B238E200E8F637 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4CA1910D17B238E700E8F637 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		4CA1910F17B238ED00E8F637 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -144,15 +143,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CA1911317B23B1E00E8F637 /* SystemConfiguration.framework in Frameworks */,
-				4C8BBBFD19111E6400EC3118 /* JSAdvertisingSDK.framework in Frameworks */,
 				4CA1911017B238ED00E8F637 /* Social.framework in Frameworks */,
 				4CA1910E17B238E700E8F637 /* Accounts.framework in Frameworks */,
 				4CA1910C17B238E200E8F637 /* QuartzCore.framework in Frameworks */,
 				4C12E5CC17A422DC0043CB7F /* UIKit.framework in Frameworks */,
+				4CA0C3431915F20C003E83D9 /* JSAdvertisingSDK.framework in Frameworks */,
 				4C12E5CE17A422DC0043CB7F /* Foundation.framework in Frameworks */,
 				4C12E5D017A422DC0043CB7F /* CoreGraphics.framework in Frameworks */,
 				4C12E5D217A422DC0043CB7F /* CoreData.framework in Frameworks */,
-				4CA1911517B23B2C00E8F637 /* Crashlytics.framework in Frameworks */,
 				AA97F98EF32049D6BA874598 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,10 +196,10 @@
 		4C12E5D317A422DC0043CB7F /* 140s */ = {
 			isa = PBXGroup;
 			children = (
-				4C8BBBFA19111E6400EC3118 /* JSAdvertisingImages.bundle */,
-				4C8BBBFB19111E6400EC3118 /* JSAdvertisingSDK.framework */,
-				4C8BBBCB19111A9D00EC3118 /* Reachability.h */,
-				4C8BBBCC19111A9D00EC3118 /* Reachability.m */,
+				4CA0C3441915F294003E83D9 /* Reachability.h */,
+				4CA0C3451915F294003E83D9 /* Reachability.m */,
+				4CA0C3401915F20C003E83D9 /* JSAdvertisingImages.bundle */,
+				4CA0C3411915F20C003E83D9 /* JSAdvertisingSDK.framework */,
 				4CD6C24F17E3F82800B7E874 /* Images */,
 				4CD6C25B17E410C200B7E874 /* NSDate+Helper.h */,
 				4CD6C25C17E410C200B7E874 /* NSDate+Helper.m */,
@@ -323,6 +321,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = fengqijun;
+				TargetAttributes = {
+					4C12E5C717A422DC0043CB7F = {
+						DevelopmentTeam = SJ3B6JCMT6;
+					};
+				};
 			};
 			buildConfigurationList = 4C12E5C317A422DC0043CB7F /* Build configuration list for PBXProject "140Pulse" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -369,7 +372,7 @@
 				4C68335917A63BC300B85383 /* Default@2x.png in Resources */,
 				4C68335D17A63BC900B85383 /* Default-568h@2x.png in Resources */,
 				4CFCCC7317A77DC200739398 /* Icon.png in Resources */,
-				4C8BBBFC19111E6400EC3118 /* JSAdvertisingImages.bundle in Resources */,
+				4CA0C3421915F20C003E83D9 /* JSAdvertisingImages.bundle in Resources */,
 				4CFCCC7517A77DC600739398 /* Icon@2x.png in Resources */,
 				4CA61C5E17E7DF5E005B09E7 /* Icon-80@2x.png in Resources */,
 			);
@@ -432,6 +435,7 @@
 				4C12E5DE17A422DC0043CB7F /* AppDelegate.m in Sources */,
 				4C12E5E717A422DC0043CB7F /* _40s.xcdatamodeld in Sources */,
 				4C12E60817A423340043CB7F /* TwitterButton.m in Sources */,
+				4CA0C3461915F294003E83D9 /* Reachability.m in Sources */,
 				4C12E60917A423340043CB7F /* WeiboButton.m in Sources */,
 				4CD6C25D17E410C200B7E874 /* NSDate+Helper.m in Sources */,
 				4CD6C25917E3FF0D00B7E874 /* TweetsViewController.m in Sources */,
@@ -440,7 +444,6 @@
 				4C12E61217A423340043CB7F /* PrettyAlertView.m in Sources */,
 				4CD6C25217E3FA3E00B7E874 /* Tweet+CoreData.m in Sources */,
 				4CF9A6FD17A56A26008DA683 /* MainViewController.m in Sources */,
-				4C8BBBCD19111A9D00EC3118 /* Reachability.m in Sources */,
 				4CD6C26917E4AD2300B7E874 /* Tweet.m in Sources */,
 				4CCB094917A6C614000E022D /* SocialButton.m in Sources */,
 			);
@@ -534,6 +537,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "旅游省钱电话";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
@@ -560,6 +564,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "旅游省钱电话";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -570,17 +575,25 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AF67E25DB92444F8916DC51 /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Qijun Feng (RX9KLU63PM)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Qijun Feng (SJ3B6JCMT6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Qijun Feng (SJ3B6JCMT6)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/fengqijun/Documents/workspace/140s,
 					"$(PROJECT_DIR)/140s",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "140s/140Pulse-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/SVProgressHUD\"",
+				);
 				INFOPLIST_FILE = "140s/140Pulse-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CODE_SIGN_FLAGS = "";
 				PRODUCT_NAME = 140Pulse;
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -589,17 +602,25 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AF67E25DB92444F8916DC51 /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Qijun Feng (RX9KLU63PM)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Qijun Feng (SJ3B6JCMT6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Qijun Feng (SJ3B6JCMT6)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/fengqijun/Documents/workspace/140s,
 					"$(PROJECT_DIR)/140s",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "140s/140Pulse-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/SVProgressHUD\"",
+				);
 				INFOPLIST_FILE = "140s/140Pulse-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CODE_SIGN_FLAGS = "";
 				PRODUCT_NAME = 140Pulse;
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
