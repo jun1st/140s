@@ -28,6 +28,22 @@
 		4C12E61217A423340043CB7F /* PrettyAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C12E60517A423340043CB7F /* PrettyAlertView.m */; };
 		4C12E61317A423340043CB7F /* Signika-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4C12E60717A423340043CB7F /* Signika-Regular.otf */; };
 		4C12E61617A4236C0043CB7F /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C12E61417A4236C0043CB7F /* Storyboard.storyboard */; };
+		4C30035F192DF32F00334002 /* 100.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C300351192DF32F00334002 /* 100.png */; };
+		4C300360192DF32F00334002 /* 114.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C300352192DF32F00334002 /* 114.png */; };
+		4C300361192DF32F00334002 /* 1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C300353192DF32F00334002 /* 1024.png */; };
+		4C300362192DF32F00334002 /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C300354192DF32F00334002 /* 120.png */; };
+		4C300363192DF32F00334002 /* 144.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C300355192DF32F00334002 /* 144.png */; };
+		4C300364192DF32F00334002 /* 29.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C300356192DF32F00334002 /* 29.png */; };
+		4C300365192DF32F00334002 /* 40.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C300357192DF32F00334002 /* 40.png */; };
+		4C300366192DF32F00334002 /* 50.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C300358192DF32F00334002 /* 50.png */; };
+		4C300367192DF32F00334002 /* 57.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C300359192DF32F00334002 /* 57.png */; };
+		4C300368192DF32F00334002 /* 58.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C30035A192DF32F00334002 /* 58.png */; };
+		4C300369192DF32F00334002 /* 72.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C30035B192DF32F00334002 /* 72.png */; };
+		4C30036A192DF32F00334002 /* 76.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C30035C192DF32F00334002 /* 76.png */; };
+		4C30036B192DF32F00334002 /* 80.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C30035D192DF32F00334002 /* 80.png */; };
+		4C30036C192DF32F00334002 /* 152.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C30035E192DF32F00334002 /* 152.png */; };
+		4C30036F192DF36500334002 /* 开机画面960.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C30036D192DF36500334002 /* 开机画面960.png */; };
+		4C300370192DF36500334002 /* 开机画面1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C30036E192DF36500334002 /* 开机画面1136.png */; };
 		4C68335517A63BB800B85383 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C68335717A63BB800B85383 /* Default.png */; };
 		4C68335917A63BC300B85383 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C68335B17A63BC300B85383 /* Default@2x.png */; };
 		4C68335D17A63BC900B85383 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C68335F17A63BC900B85383 /* Default-568h@2x.png */; };
@@ -92,6 +108,22 @@
 		4C12E60617A423340043CB7F /* PrettyAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettyAlertView.h; sourceTree = "<group>"; };
 		4C12E60717A423340043CB7F /* Signika-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Signika-Regular.otf"; sourceTree = "<group>"; };
 		4C12E61417A4236C0043CB7F /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		4C300351192DF32F00334002 /* 100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 100.png; sourceTree = "<group>"; };
+		4C300352192DF32F00334002 /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
+		4C300353192DF32F00334002 /* 1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1024.png; sourceTree = "<group>"; };
+		4C300354192DF32F00334002 /* 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 120.png; sourceTree = "<group>"; };
+		4C300355192DF32F00334002 /* 144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 144.png; sourceTree = "<group>"; };
+		4C300356192DF32F00334002 /* 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 29.png; sourceTree = "<group>"; };
+		4C300357192DF32F00334002 /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 40.png; sourceTree = "<group>"; };
+		4C300358192DF32F00334002 /* 50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 50.png; sourceTree = "<group>"; };
+		4C300359192DF32F00334002 /* 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57.png; sourceTree = "<group>"; };
+		4C30035A192DF32F00334002 /* 58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 58.png; sourceTree = "<group>"; };
+		4C30035B192DF32F00334002 /* 72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 72.png; sourceTree = "<group>"; };
+		4C30035C192DF32F00334002 /* 76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 76.png; sourceTree = "<group>"; };
+		4C30035D192DF32F00334002 /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80.png; sourceTree = "<group>"; };
+		4C30035E192DF32F00334002 /* 152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 152.png; sourceTree = "<group>"; };
+		4C30036D192DF36500334002 /* 开机画面960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "开机画面960.png"; sourceTree = "<group>"; };
+		4C30036E192DF36500334002 /* 开机画面1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "开机画面1136.png"; sourceTree = "<group>"; };
 		4C68335617A63BB800B85383 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/Default.png; sourceTree = "<group>"; };
 		4C68335817A63BBC00B85383 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "zh-Hans"; path = "zh-Hans.lproj/Default.png"; sourceTree = "<group>"; };
 		4C68335A17A63BC300B85383 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/Default@2x.png"; sourceTree = "<group>"; };
@@ -196,6 +228,22 @@
 		4C12E5D317A422DC0043CB7F /* 140s */ = {
 			isa = PBXGroup;
 			children = (
+				4C30036D192DF36500334002 /* 开机画面960.png */,
+				4C30036E192DF36500334002 /* 开机画面1136.png */,
+				4C300351192DF32F00334002 /* 100.png */,
+				4C300352192DF32F00334002 /* 114.png */,
+				4C300353192DF32F00334002 /* 1024.png */,
+				4C300354192DF32F00334002 /* 120.png */,
+				4C300355192DF32F00334002 /* 144.png */,
+				4C300356192DF32F00334002 /* 29.png */,
+				4C300357192DF32F00334002 /* 40.png */,
+				4C300358192DF32F00334002 /* 50.png */,
+				4C300359192DF32F00334002 /* 57.png */,
+				4C30035A192DF32F00334002 /* 58.png */,
+				4C30035B192DF32F00334002 /* 72.png */,
+				4C30035C192DF32F00334002 /* 76.png */,
+				4C30035D192DF32F00334002 /* 80.png */,
+				4C30035E192DF32F00334002 /* 152.png */,
 				4CA0C3441915F294003E83D9 /* Reachability.h */,
 				4CA0C3451915F294003E83D9 /* Reachability.m */,
 				4CA0C3401915F20C003E83D9 /* JSAdvertisingImages.bundle */,
@@ -351,29 +399,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CD9D63618410E4E002A9A63 /* Menu-old@2x.png in Resources */,
+				4C300368192DF32F00334002 /* 58.png in Resources */,
 				4CA61C5D17E7DF5E005B09E7 /* Icon-58@2x.png in Resources */,
 				4CD6C26617E4401B00B7E874 /* back@2x.png in Resources */,
+				4C30036F192DF36500334002 /* 开机画面960.png in Resources */,
 				4C12E5D817A422DC0043CB7F /* InfoPlist.strings in Resources */,
+				4C30036C192DF32F00334002 /* 152.png in Resources */,
+				4C300367192DF32F00334002 /* 57.png in Resources */,
+				4C300365192DF32F00334002 /* 40.png in Resources */,
 				4C12E60C17A423340043CB7F /* camera.png in Resources */,
 				4C12E60D17A423340043CB7F /* camera@2x.png in Resources */,
+				4C300369192DF32F00334002 /* 72.png in Resources */,
+				4C30035F192DF32F00334002 /* 100.png in Resources */,
 				4C12E60E17A423340043CB7F /* weibo.png in Resources */,
 				4CA61C5A17E7DED4005B09E7 /* Icon-120@2x.png in Resources */,
 				4CD9D63A18411374002A9A63 /* Menu@2x.png in Resources */,
 				4C12E60F17A423340043CB7F /* weibo@2x.png in Resources */,
+				4C300361192DF32F00334002 /* 1024.png in Resources */,
+				4C300360192DF32F00334002 /* 114.png in Resources */,
 				4C12E61017A423340043CB7F /* twitter.png in Resources */,
 				4CD6C25F17E4235A00B7E874 /* TweetsViewController.xib in Resources */,
 				4C12E61117A423340043CB7F /* twitter@2x.png in Resources */,
 				4C12E61317A423340043CB7F /* Signika-Regular.otf in Resources */,
 				4C12E61617A4236C0043CB7F /* Storyboard.storyboard in Resources */,
+				4C300363192DF32F00334002 /* 144.png in Resources */,
 				4CF9A6FF17A56A88008DA683 /* InputAccessoryView.xib in Resources */,
+				4C30036B192DF32F00334002 /* 80.png in Resources */,
 				4CF9A70917A5749E008DA683 /* CameraOverlayView.xib in Resources */,
+				4C30036A192DF32F00334002 /* 76.png in Resources */,
 				4CF9A70517A5744E008DA683 /* Localizable.strings in Resources */,
+				4C300370192DF36500334002 /* 开机画面1136.png in Resources */,
+				4C300366192DF32F00334002 /* 50.png in Resources */,
 				4C68335517A63BB800B85383 /* Default.png in Resources */,
 				4C68335917A63BC300B85383 /* Default@2x.png in Resources */,
 				4C68335D17A63BC900B85383 /* Default-568h@2x.png in Resources */,
 				4CFCCC7317A77DC200739398 /* Icon.png in Resources */,
 				4CA0C3421915F20C003E83D9 /* JSAdvertisingImages.bundle in Resources */,
 				4CFCCC7517A77DC600739398 /* Icon@2x.png in Resources */,
+				4C300364192DF32F00334002 /* 29.png in Resources */,
+				4C300362192DF32F00334002 /* 120.png in Resources */,
 				4CA61C5E17E7DF5E005B09E7 /* Icon-80@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,8 +639,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AF67E25DB92444F8916DC51 /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Qijun Feng (SJ3B6JCMT6)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Qijun Feng (SJ3B6JCMT6)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/140s",
@@ -602,8 +666,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AF67E25DB92444F8916DC51 /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Qijun Feng (SJ3B6JCMT6)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Qijun Feng (SJ3B6JCMT6)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/140s",
